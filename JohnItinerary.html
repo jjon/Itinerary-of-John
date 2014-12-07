@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+
+	
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY-HERE&sensor=false"></script>
+    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="http://ui.jquery.com/latest/ui/effects.core.js"></script>
+	
+	<script type="text/javascript">
+		Timeline_ajax_url="js/timeline/src/ajax/api/simile-ajax-api.js";
+		Timeline_urlPrefix="js/timeline/src/webapp/api/";       
+		Timeline_parameters="bundle=true";
+	</script>
+	<script src="js/timeline/src/webapp/api/timeline-api.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="JohnItinerary.css" type="text/css">
+
+	<script type="text/javascript" src="js/shadowbox-2.0-code/src/adapter/shadowbox-base.js"></script>
+	<script type="text/javascript" src="js/shadowbox-2.0-code/src/shadowbox.js"></script>
+	
+	<script src="js/johns-reign.js" type="text/javascript"></script>
+	<script src="data/gazetteer.js" type="text/javascript">
+		<!-- generate js variable here for data as above for Timeline? -->
+	</script>
+	<script src="js/itin-code.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		// Initialize shadowbox
+		Shadowbox.loadSkin('test2skin', 'js/shadowbox-2.0-code/src/skin');
+		Shadowbox.loadLanguage('en', 'js/shadowbox-2.0-code/src/lang');
+		Shadowbox.loadPlayer(['html'], 'js/shadowbox-2.0-code/src/player');
+	</script>
+	
+	<title>The Itinerary of King John Project</title>
+
+</head>
+<body onload="onLoad();" onunload="GUnload()" onresize="onResize();">
+<div id="container">
+<!-- 
+	<div id="header">
+	</div>
+ -->
+	<div id="col1">
+		<div id="top-block">
+			<div id="timeline-container">
+				<div id="JohnItinerary" class="timeline-default" style="height: 250px"></div>
+			</div>
+		
+		</div>
+	
+		<div id="navlist">
+			<ul> 
+				<li id="tab1" class="tab_showing" onclick="javascript:show_next('tab1')">About this site</li>
+				<li id="tab2" class="tab" onclick="javascript:show_next('tab2')">Legend</li> 
+				<li id="tab3" class="tab" onclick="javascript:show_next('tab3')">Controls</li>
+				<li id="tab4" class="tab">Page Images</li>
+			</ul>
+		</div>
+		
+		<div id="content-divs">
+			<div id=tab1_content>
+				<dl id="about_list">
+					<dt style="background: #FF9500; color: #221;">This Site</dt>
+					<dd>
+						The timeline above displays the itinerary of <span class="ttip">King John of England</span> for nearly every day of his seventeen year reign. Like most medieval kings, John's government was relentlessly itinerant. The places John visited are plotted on the map, changing dynamically, reflecting the places displayed in the lower band of the timeline. The timeline can be scrolled left and right by clicking and dragging, and you can observe John's progress as he traveled throughout England, Wales, Ireland, and France. The top band displays contextual events of general interest for the period, and the highlighted bar in the middle of the band represents the period of time displayed in the lower band.
+						
+						<p>The data displayed in this timeline was published in tabular format in the <cite>Rotuli Litterarum Patentium in Turri Londinensi Asservati</cite>, edited by Thomas Duffus Hardy, and published in 1835. This essential source for students of the period is a large folio volume not widely available and rather awkward to use. Both the itinerary and the text of the patent rolls themselves are presented here in a more convenient form as a service to historians and students.</p>
+						
+						<p>For a more detailed description of the structural elements of the timeline above, consult the information under the 'Legend' tab.</p>
+					</dd>
+					
+					<dt>The Patent Rolls</dt>
+					<dd>
+			
+						The letters patent of the English crown are a foundational source for the study of medieval English government. These letters, "patent" because they were transmitted open and intended for all to see, constitute the primary instruments of royal government in the time of King John and his successors. They are the essential starting point for any study of medieval England, and indeed medieval Europe.
+						
+						<p>Letters patent from the medieval period touch upon every conceivable aspect of royal government, from treaties and diplomatic correspondence to fiscal matters and family politics. The best introduction to the patent rolls, their content and historical utility, is Hardy's own <a class="text_link" href="#" onclick="loadPage('-074'); return false">introduction</a> beginning on page i.</p>
+						
+						<p>The text of the <cite>Rot. Lit. Pat</cite> can be used independently from the timeline. Clicking on the 'Page Images' will display the text with a paging mechanism allowing you to consult the indexes of names and places, and go directly to pages of the introduction or the roll itself.</p>
+					</dd>
+					
+					<dt>The Itinerary</dt>
+					<dd>
+						The publication of the patent rolls alone was a boon to historians of medieval England, but Thomas Hardy went further. For the 1835 edition, Hardy collated information from the <i>teste</i> and dating clauses of the patent letters themselves with information drawn from the charter and close rolls, the wardrobe accounts, and the <i>praestita</i> rolls. Based on this collation, Hardy was able to determine the exact itinerary of the king for nearly every day of his reign. This was a remarkable feat of scholarship, and Hardy's itinerary has been an invaluable resource for historians ever since. (The pages of Hardy's original itinerary tables begin <a class="text_link" href="#" onclick="loadPage('-026'); return false">here</a>.)
+						
+						<p>Included below Hardy's tables was a gazetteer of the places mentioned, with the dates for each place listed. The data displayed in this timeline and map was captured by scanning the gazetteer, processing the image with OCR software, and parsing the result with a python script to produce a JavaScript object for the timeline software.</p>
+						
+						<p>Unfortunately, the <cite>Rot. Lit. Pat.</cite> exists only in the folio edition published in 1835. This is a fairly uncommon volume, available only in extensive research libraries. The purpose of this site is to offer the data of Hardy's itinerary in a more convenient and widely accessible format, and link it more closely with the patent letters themselves. Clicking on any of the events in the lower band of the timeline above will bring up an information bubble which contains links to the pages of the <cite>Rot. Lit. Pat</cite> that contain dated letters for the relevant period. Because the data in the itinerary was drawn from a variety of sources, not all of the events on the timeline will have links, and not all of the events will be represented in the patent letters at all.</p>
+					</dd>
+					
+					<dt>The Map</dt>
+					<dd>
+						Place-names have always been a problem for students of medieval records. Places change their names; the same place-name is sometimes applied to more than one location; places, once important, sometimes disappear altogether and are known only by their names in the records.
+						
+						<p>The place markers on the map were derived by querying the Google geocoding interface using Hardy's place-names. This was a pretty crude first pass at providing geographical data for the timeline events. The procedure results in many errors since Google knows nothing of medieval places. The place markers on the map should therefor not be regarded as authoritative. The research and disambiguation of all the 600 or so places mentioned in Hardy's itinerary is a research project that will go forward using this first pass as a starting point.</p>
+					</dd>
+			
+					<dt>Record Type</dt>
+					<dd>
+						<img src="Images/record_type_example.png" style="float: left; padding-right: 10px" alt="example of record type" />
+						When Hardy published the <cite>Rot. Lit. Pat.</cite> in 1835, it was thought that in order to preserve potential ambiguities present in the rolls, an effort should be made to reproduce the text including the system of scribal abbreviation in use during the thirteenth century. To that end, a typeface called "record type" was used, and an example drawn from the text is shown here. In practice, record type tends to obfuscate rather than illuminate. And for our purposes here, this specialized typeface has the added unfortunate effect of rendering the text opaque to ordinary OCR techniques. That is why the text of the rolls is not digitized and indexed as it should be. To improve the readability of the abbreviations, the aspect ratio of the page images for the body of the text has been slightly altered, elongating the images somewhat.
+						
+						<p>Record type takes some getting used to, but the Latin of the rolls is so highly formulaic that reading it is not too challenging. Fortunately, an excellent guide to the system of abbreviation is available: Martin, Charles Trice. <cite>The Record Interpreter: A Collection of Abbreviations, Latin Words and Names Used in English Historical Manuscripts and Records.</cite> London: Stevens and Sons, 1949. This work is still in print, has been through many editions, and is readily, and inexpensively available.</p>
+					</dd>
+					
+					<dt>Construction Zone</dt>
+					<dd>
+						<img src="Images/construct.gif" alt="under construction" style="float: left; margin-right: 2em" />
+						<ul>
+							<li>Feb. 2009 &mdash; remodel of the site to make better use of screen real estate making use of the jQuery and Shadowbox javascript libraries</li>
+							<li>The information bubbles attached to the events in the timeline currently contain only the short title and the full name used by Hardy in his gazetteer. Some of the bubbles also contain links that will open the pages of the <cite>Rot. Lit. Pat.</cite> for the period in question. Not all of these links have been provided yet.</li>
+							<li>There are 642 named places in Hardy's itinerary. Currently the map here has map-markers for 457 of these. These map-markers are the result of the crudest sort of querying of the Google geocoding interface, as such, they are in NO WAY authoritative. (you may find one of these map-markers on Java, not exactly in John's ambit!) Identifying and disambiguating the historical place-names mentioned in <cite>Rot. Lit. Pat.</cite> is an ongoing research project.</li>
+							<li>Some browsers on some platforms load and render the data faster than others. <span style="text-decoration: line-through">Work is under way to address cross-browser issues and optimize the code</span>. A different approach to placing the map markers has resulted in much zippier response time. Thanks David for showing me how to make this approach work!</li>
+							<li>The top band of the timeline contains events of general relevance for medieval European history to provide context for the events of John's itinerary. Additional events for this portion of the timeline will be added in future.</li>
+							<li>Plans for the future also include making public an RDF model (Resource Description Framework) for the data presented here.</li>
+							<li>Also, a detailed tutorial will be provided describing the procedure used to create this site so that similar resources may be created for other scarce and valuable resources in the public domain.</li>
+						</ul>
+					</dd>
+					
+					<dt>Contact &amp; Contributions</dt>
+					<dd>
+						The Itinerary of John is an ongoing, open-sourced research project. This site was created by integrating the open-source timeline API from MIT's SIMILE project with the publicly available mapping API from Google. The content of the site, similarly, is intended to be open-sourced. Plans for the future include deploying this project in the context of a wiki so that interested scholars may contribute:
+						<ul>
+							<li>Transcriptions and translations of the letters in the <cite>Rot. Lit. Pat.</cite>,</li>
+							<li>Disambiguation, geographical location (lat/lng), and summary histories of the place-names mentioned in the itinerary,</li>
+							<li>Links to corroborating documents for the events in the itinerary that are not attested by letters in the patent rolls,</li>
+							<li>Commentary and analysis of specific letters in the <cite>Rot. Lit. Pat.</cite>,</li>
+							<li>Methods and mechanisms for semantically linking the data here with similar data in other repositories.</li>
+						</ul>
+						
+						<p>The Itinerary of King John project is intended to be collaborative. Comments, corrections, and questions can be addressed to me at jjcrump [at] myuw.net until such time as the wiki framework is in place.</p>
+					</dd>
+					
+					<dt>Acknowlegements &amp; Rights</dt>
+					<dd>
+						Great thanks and kudos belong to David Huynh, the principal author of the SIMILE timeline API. He has created a tool that will be a great boon to historians, and without his direct assistance, this resource would not have been possible.
+						
+						<p>Thanks also to the Suzzallo Library at the University of Washington for allowing me to scan the full text of their copy of the <cite>Rot. Lit. Pat.</cite>. Also thanks to the Suzzallo Library office of Digital Initiatives for allowing me to use their scanning equipment and software (principally ABBYY FineReader OCR software, and Photoshop) for capturing the data and preparing the page scans for display on the web.</p>
+						
+						<p>So far as I know, the <cite>Rotuli Litterarum Patentium</cite> is in the public domain. Unless otherwise noted, all other text on this site, the RDF encoded data, and the software code that enables the site (exclusive of the SIMILE timeline and Google Maps APIs) are offered under the following license:</p>
+						
+						<p><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">The Itinerary of King John Project</span> by <a class="text_link" xmlns:cc="http://creativecommons.org/ns#" href="http://home.myuw.net/jjcrump/Timelines/itinerary/JohnItinerary.html" property="cc:attributionName" rel="cc:attributionURL">J. J. Crump</a> is licensed under a <a class="text_link" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.</p>
+					</dd>
+				</dl>
+			</div> <!-- End Tab 1 contents -->
+				
+			<div id=tab2_content style='display:none'>
+				<dl>
+					<dt>Band One</dt>
+					<dd>
+					The first band in the time-line displays events of significance for the reign of King John and for medieval European history generally. Clicking on any of the events will display a bubble containing descriptive or explanatory text, and links to further relevant information. The lighter highlight in the middle of this band represents the span of time showing in band three.<br /></dd>
+					
+					<dt>Band Two</dt>
+					<dd>
+					The second band is a schematic representation only of the data displayed in detail in band three so that you can see at a glance the periods of greater activity. The vertical ticks represent point dates, and the horizontal ticks represent durations. The time scale for this band is the same as for the one above, but it is marked with the regnal years of King John.  John was crowned on Ascension day in 1199. Ascension is a moveable feast and so John's regnal year begins and ends on a different day each year. This is indicated in the scale at the top, and with a label at the beginning of each regnal year in band 3. My thanks to David Huynh, the principal author of the timeline software, for working out the code to represent this irregular schedule. <br /></dd>
+					
+					<dt>Band Three</dt>
+					<dd>
+					The third band displays the elements of John's Itinerary as they appeared in the introduction to the Patent Rolls. Unless you have a research university handy, consulting the patent rolls can be a problem. Hardy's itinerary, published in 1835, is invaluable, but not the sort of thing that you can pick up at your local used book store. In unwieldy folio volumes, the itinerary was published as a series of tables appended to Hardy's introduction. This format was not ideal. An internet browser now makes it possible to display this data in a more graphically intelligible format. Clicking on these events will display a bubble containing a link to a google map of the referenced place, and any place-name information that Hardy may have included. The itinerary is thus a useful gazetteer to many of the geographical locations of importance in early thirteenth-century European history. I have used the place-names exactly as they appear in Hardy.<br /></dd>
+					
+					<dt>Controls</dt>
+					<dd>
+						<ul>
+							<li>Click and drag to scroll the timeline left or right</li>
+							<li>Double-click on any of the bands, and the timeline will automatically scroll to center that date.</li>
+							<li>The arrow keys will scroll the timeline in small increments.</li>
+							<li>The page-up and page-down keys will scroll the timeline forward and back one screen per keystroke.</li>
+							<li>The Home and End keys will go the the beginning or end of the data present in the timeline.</li>
+							<li>Clicking on any of the years listed for John's reign will re-center the timeline on that year.</li>
+							<li>Typing into the 'filter' box will limit the displayed events to those containing the typed text.</li>
+							<li>Typing into the 'highlight' boxes will highlight the matching events with the color shown.</li>
+						</ul>
+					</dd>
+				</dl>
+	
+			</div> <!-- End Tab 3 contents -->
+				
+			<div id=tab3_content style='display:none; height: 350px'>	
+				<div class="control-box">
+				<p>Select a year from John's reign to center the timeline on that year.</p><br />
+				<select id="johnyears" onChange="pickDate();">
+					<option value="">Select a year</option>
+					<option value="1199">1199</option>
+					<option value="1200">1200</option>
+					<option value="1201">1201</option>
+					<option value="1202">1202</option>
+					<option value="1203">1203</option>
+					<option value="1204">1204</option>
+					<option value="1205">1205</option>
+					<option value="1206">1206</option>
+					<option value="1207">1207</option>
+					<option value="1208">1208</option>
+					<option value="1209">1209</option>
+					<option value="1210">1210</option>
+					<option value="1211">1211</option>
+					<option value="1212">1212</option>
+					<option value="1213">1213</option>
+					<option value="1214">1214</option>
+					<option value="1215">1215</option>
+					<option value="1216">1216</option>
+				</select>
+				</div>
+	
+				<div id="controls" class="control-box">
+				<p>Type into the boxes to filter or highlight events that contain the text in either the event title, or the event info bubble:</p>
+				</div>
+			</div> <!-- End Tab 2 contents -->
+				
+			<div id="page_images" style="display: none; ">
+				<div style="text-align: center;">
+					<img id="scan" src="pageImages/001.jpg" alt="image of a page in the Rot. Lit. Pat."/>
+				</div>
+			</div>
+		</div> <!-- End Content Divs -->
+	</div> <!-- End col. 1 -->
+
+	<div id="col2">
+		<div id="map-box">
+			<div id="mapcontainer" style="overflow: hidden">
+				<div id="map" style="width: 100%; height: 550px"></div>
+			</div>
+
+		</div>
+		<div style="text-align: center; color: #FF9500; font-size: 200%; font-weight: bold; padding: 20px">The Itinerary of King John &amp; the <cite>Rotuli Litterarum Patentium</cite></div>
+		<div style="text-align: center"><img src="Images/JohnsSeal.png" alt="John's Great Seal, reverse" name="John's Great Seal, reverse" /></div>
+	</div>
+
+	<div id="footer">
+		<div style="margin-left: auto; margin-right: auto; width: 90px"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/"><img alt="Creative Commons License" style="border-width: 0px" src="http://creativecommons.org/images/public/somerights20.png" /></a></div>
+	</div>
+
+</div> <!-- End Container Div -->
+
+</body>
+</html>
