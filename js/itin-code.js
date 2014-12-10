@@ -10,7 +10,6 @@ var tl = null;
 var map = null;
 var geocoder = null;        
 
-
 function onLoad() {
 	// Initialize google map
 	    map = new google.maps.Map(document.getElementById('map'), {

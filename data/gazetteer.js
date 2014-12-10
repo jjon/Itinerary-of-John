@@ -111,8 +111,8 @@ places_json = {
             0.007319
         ]
     }, 
-    "Brampton, Huntingdon": {
-        "gplace": "Brampton, Huntingdon, Cambridgeshire", 
+    "Brampton, Huntingdonshire": {
+        "gplace": "Brampton, Cambridgeshire, UK", 
         "latLong": [
             52.320312999999999, 
             -0.22009100000000001
@@ -2983,10 +2983,7 @@ places_json = {
     }, 
     "Bambrough, Northumberland": {
         "gplace": "Bamburgh, Northumberland, United Kingdom", 
-        "latLong": [
-            55.606544999999997, 
-            -1.717033
-        ]
+        "latLong": [55.60896,-1.7099]
     }, 
     "Waresley, Huntingdonshire": {
         "gplace": "Waresley, Sandy, Bedfordshire", 
@@ -3366,5 +3363,52 @@ places_json = {
         "gplace": "Carew Castle, Pembrokeshire",
         "latLong": [51.698382,-4.830036],
         "notes": ["Kanter says simply 'Cross below Pembroke'","Journal of the Waterford & South-East of Ireland Archaeological Society, Volume 6 pg. 92 note bb commenting upon Morice Regan's poem concerning Henry's Irish expedition cites Goddard Orpen who says:\"It has not been observed that this was the name of the regular place of embarkation, near Pembroke. John, like Henry, appears to have embarked <i>'Apud crucem super mare vel subtus Pembroke'</i> See Prestita Roll 12th John. In Vol. Cal. Docts. Ireland, Nos. 401, 403, is recorded a number of payments at this place to knights, mariners, and others going to Ireland on the King’s service. Was it Carew Cross? about one mile from Carew Castle, already referred to as Raymond le Gros' Welsh home.\" Location still an open question."]
-    }
+    },
+    "Freemantle Or Fremanton, Hampshire": {
+        "gplace": "Freemantle Southampton SO15 UK",
+        "latLong": [50.9100079,-1.4238365],
+        "notes": ["Kanter identifies this as one five royal residences in Hampshire"]
+    },
+    "Guilsborough, Yorkshire": {
+        "gplace": "Guisborough, Yorkshire, UK",
+        "latLong": [54.5366812,-1.0550251]
+    },
+    "Sleaford Or Lafford, Lincolnshire": {
+        "gplace": "Sleaford, Lincolnshire, UK",
+        "latLong": [52.9982864,-0.4085617]
+    },
+    "Newark-Upon-Trent, Nottinghamshire": {
+        "gplace": "Newark-on-Trent, Newark, Nottinghamshire, UK",
+        "latLong": [53.0762705,-0.8020337]
+    },
+    "Salvata, Northamptonshire": {
+        "gplace": "Sauvey Castle, Leicester, Leicestershire",
+        "latLong": [52.638977,-0.837072]
+    },
+    "Woodham, Essex": {
+        "gplace": "Woodham Walter, Maldon, Essex",
+        "latLong": [51.7286191,0.6162414]
+    },
+    "Totham, Essex": {
+        "gplace": "Great Totham, Essex",
+        "latLong": [51.7716662,0.6868475]
+    },
+    "Ditton, Surrey": {
+        "gplace": "Thames Ditton, Surrey",
+        "latLong": [51.3895875,-0.3395293]
+    },
+    "Uphaven, Wiltshire": {
+        "gplace": "Upavon, Wiltshire",
+        "latLong": [51.2945698,-1.814540]
+    },
+    "Canford, Dorsetshire": {
+        "gplace": "Canford Magna, Dorset",
+        "latLong": [50.7864471,-1.9527116],
+        "notes": ["Oct. 12, 1212"]
+    },
+    "Corfe, Dorsetshire": {
+        "gplace": "Corfe Castle, Dorset",
+        "latLong": [50.640129,-2.058796],
+        "notes": ["Automated methods have no sense of proportion. The first cut at geocoding in Google missed Corfe?!", "Oct. 14, 1212", "Added data to date: Ireland: 1210, and then 1212: 24+ places added or fixed"]
+    }    
 }

@@ -2,12 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
 <head>
 
-	
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY-HERE&sensor=false"></script>
-    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+    <!-- jsconfig will load https://maps.googleapis.com/maps/api/js -->
+    <script type="text/javascript" src="jsconfig.js"></script>
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script src="http://ui.jquery.com/latest/ui/effects.core.js"></script>
 	
 	<script type="text/javascript">
 		Timeline_ajax_url="js/timeline/src/ajax/api/simile-ajax-api.js";
@@ -36,11 +34,10 @@
 	<title>The Itinerary of King John Project</title>
 
 </head>
-<body onload="onLoad();" onunload="GUnload()" onresize="onResize();">
+<body onresize="onResize();">
 <div id="container">
 <!-- 
-	<div id="header">
-	</div>
+	Was calling onLoad in the body tag, but now it's the callback in jsconfig.js
  -->
 	<div id="col1">
 		<div id="top-block">
