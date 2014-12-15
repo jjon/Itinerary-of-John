@@ -848,10 +848,7 @@ places_json = {
     }, 
     "Westminster, Middlesex": {
         "gplace": "Westminster, Middlesex", 
-        "latLong": [
-            51.500152, 
-            -0.12623599999999999
-        ]
+        "latLong": [51.4991851,-0.1248209]
     }, 
     "Fareham, Hampshire": {
         "gplace": "Fareham, Hampshire", 
@@ -1713,7 +1710,7 @@ places_json = {
             51.179639000000002, 
             -3.1408469999999999
         ]
-    }, 
+    },
     "Alnwick, Northumberland": {
         "gplace": "Alnwick, Northumberland", 
         "latLong": [
@@ -3267,10 +3264,7 @@ places_json = {
     },
     "Conches, Normandie": {
         "gplace": "Conches En Ouche, FR 27190",
-        "latLong": [
-           48.966666699999998,
-           0.93333330000000003
-        ]
+        "latLong": [48.9615087,0.943233]
     },
     "Cailly, Normandie": {
         "gplace": "Cailly, FR 76690",
@@ -3364,6 +3358,30 @@ places_json = {
         "latLong": [51.698382,-4.830036],
         "notes": ["Kanter says simply 'Cross below Pembroke'","Journal of the Waterford & South-East of Ireland Archaeological Society, Volume 6 pg. 92 note bb commenting upon Morice Regan's poem concerning Henry's Irish expedition cites Goddard Orpen who says:\"It has not been observed that this was the name of the regular place of embarkation, near Pembroke. John, like Henry, appears to have embarked <i>'Apud crucem super mare vel subtus Pembroke'</i> See Prestita Roll 12th John. In Vol. Cal. Docts. Ireland, Nos. 401, 403, is recorded a number of payments at this place to knights, mariners, and others going to Ireland on the King’s service. Was it Carew Cross? about one mile from Carew Castle, already referred to as Raymond le Gros' Welsh home.\" Location still an open question."]
     },
+    "Margam, Glamorganshire": {
+        "gplace": "Margam, Port Talbot, United Kingdom",
+        "latLong": [51.5629467,-3.7315927]
+    },
+    "Bridgewater, Somersetshire": {
+        "gplace": "Bridgwater, Somersetshire, United Kingdom",
+        "latLong": [51.1310749,-3.0118858]
+    },
+    "Hampstead, Berkshire": {
+        "gplace": "Hamstead Marshall, West Berkshire, United Kingdom",
+        "latLong": [51.3834404,-1.4038206]
+    },
+    "Cliffe, Northampton": {
+        "gplace": "King's Cliffe, Northamptonshire, UK",
+        "latLong": [52.5638994,-0.5193719]
+    },
+    "Lexington Or Laxton, Nottinghamshire": {
+        "gplace": "Laxton, Northamptonshire, UK",
+        "latLong": [52.5565379,-0.6017317]
+    },
+    "Craike, Durham": {
+        "gplace": "Crayke York, North Yorkshire",
+        "latLong": [54.1282765,-1.1409069]
+    },
     "Freemantle Or Fremanton, Hampshire": {
         "gplace": "Freemantle Southampton SO15 UK",
         "latLong": [50.9100079,-1.4238365],
@@ -3410,5 +3428,18 @@ places_json = {
         "gplace": "Corfe Castle, Dorset",
         "latLong": [50.640129,-2.058796],
         "notes": ["Automated methods have no sense of proportion. The first cut at geocoding in Google missed Corfe?!", "Oct. 14, 1212", "Added data to date: Ireland: 1210, and then 1212: 24+ places added or fixed"]
-    }    
+    },
+    "Laycock, Wiltshire": {
+        "gplace": "Lacock, Wiltshire",
+        "latLong": [51.4122587,-2.1183515]
+    },
+    "Southwark, Surrey": {
+        "gplace": "Southwark, London",
+        "latLong": [51.5002897,-0.0860716]
+    },
+    "Bosworth, Leicestershire": {
+        "gplace": "Market Bosworth, Leicestershire",
+        "latLong": [52.6233491,-1.407222],
+        "notes": ["No data in Kanter, at a guess, Market Bosworth"]
+    }
 }
