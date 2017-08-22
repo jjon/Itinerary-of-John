@@ -1,6 +1,7 @@
-{
+{//there are experiments in here with an eventData element: Jul. 1 1202, and the
+//first event Apr. 27, 119
 "events": [
-{title : "Westminster, Middlesex", start : new Date(1199,4,27), description : "Hardy's long name: Westminster, Middlesex. <br> "},
+{title : "Westminster, Middlesex", start : new Date(1199,4,27), description : "Hardy's long name: Westminster, Middlesex. <br> ", eventData: {'pageToLoad':'006', 'theAnswer':42, 'pagelink': "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('006');\" />pg. 006: 1201-02-05 to 1202-03-07"}},
 {title : "Northampton, Northamptonshire", start : new Date(1199,5,7), description : "Hardy's long name: Northampton, Northamptonshire. <br> "},
 {title : "Northampton, Northamptonshire", start : new Date(1199,5,9), description : "Hardy's long name: Northampton, Northamptonshire. <br> "},
 {title : "Canterbury, Kent", start : new Date(1199,5,12), description : "Hardy's long name: Canterbury, Kent. <br> "},
@@ -421,7 +422,7 @@
 {title : "Bonport, Normandie", start : new Date(1202,5,29), end : new Date(1202,6,1), description : "Hardy's long name: Bonport, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30"},
 {title : "Pont-De-L'Arche, Normandie", start : new Date(1202,5,29), description : "Hardy's long name: Pont-De-L'Arche, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30"},
 {title : "Seez, Normandie", start : new Date(1202,5,29), description : "Hardy's long name: Seez, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30"},
-{title : "Rouen, Normandie", start : new Date(1202,6,1), description : "Hardy's long name: Rouen, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30"},
+{title : "Rouen, Normandie", start : new Date(1202,6,1), description : "Hardy's long name: Rouen, Normandie. <br>", eventData: {pageToLoad: '013'}},
 {title : "Bonport, Normandie", start : new Date(1202,6,3), end : new Date(1202,6,14), description : "Hardy's long name: Bonport, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('008');\" />pg. 008: 1202-03-27 to 1202-07-11<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('014');\" />pg. 014: 1202-07-06 to 1202-07-20"},
 {title : "Pont-De-L'Arche, Normandie", start : new Date(1202,6,5), description : "Hardy's long name: Pont-De-L'Arche, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30"},
 {title : "Rouen, Normandie", start : new Date(1202,6,6), description : "Hardy's long name: Rouen, Normandie. <br> <img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('013');\" />pg. 013: 1202-06-24 to 1202-07-30<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('014');\" />pg. 014: 1202-07-06 to 1202-07-20"},
@@ -1700,6 +1701,8 @@
 {title : "Gravesend, Kent", start : new Date(1210,4,3), description : "Hardy's long name: Gravesend, Kent. <br> "},
 {title : "Dover, Kent", start : new Date(1210,4,4), description : "Hardy's long name: Dover, Kent. <br> "},
 {title : "Rochester, Kent", start : new Date(1210,4,6), description : "Hardy's long name: Rochester, Kent. <br> "},
+
+// we got a problem here?
 {title : "Sutton, Kent", start : new Date(1210,4,6), description : "Hardy's long name: Sutton (At Hone), Kent. <br> "},
 {title : "Westminster, Middlesex", start : new Date(1210,4,8), description : "Hardy's long name: Westminster, Middlesex. <br> "},
 {title : "Odiham, Hampshire", start : new Date(1210,4,10), description : "Hardy's long name: Odiham, Hampshire. <br> "},

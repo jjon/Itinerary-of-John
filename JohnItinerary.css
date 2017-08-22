@@ -90,23 +90,31 @@ dd {
 }
 
 .iwcontent {
-	width: 260px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size : 9px !important;
-	line-height: 9px;
-	max-height: 100px;
+    height: 100%;
+    background-color: #ffffe0;
+	font-family: Garamond, Baskerville, "Book Antiqua", serif;
+	font-size: 12pt;
 	overflow: auto;
 }
 
 .iwcontent table {
-	margin-left: auto;
-	margin-right: auto;
+    margin: 16px;
 }
 
 .rubric {
+    padding: 3px 9px;
+    width: 20%;
 	text-align: right;
-	border-bottom: 1px solid tan;
-	border-right: 3px solid tan;	
+	border-top: 2px solid tan;
+	border-right: 9px solid tan;	
+}
+
+.tvalue {
+    padding: 0px 9px;
+}
+
+.tvalue ul{
+    list-style: outside;
 }
 
 ul {

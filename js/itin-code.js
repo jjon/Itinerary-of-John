@@ -8,24 +8,62 @@
 
 var tl = null;
 var map = null;
-var geocoder = null;        
+var geocoder = null; // what the hell was this for?      
+var eventVar = null; // DEBUG: just so I can see it in the console.
 
 function onLoad() {
 	// Initialize google map
-	    map = new google.maps.Map(document.getElementById('map'), {
+	map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
         center: new google.maps.LatLng(50.2, -.5),
         mapTypeId: google.maps.MapTypeId.TERRAIN
     });
 
-    iwindow = new google.maps.InfoWindow();
-    var gplace, lat, lng, nts, notes, icon, marker, x;
+    iwindow = new google.maps.InfoWindow({
+        maxWidth: 400
+    });
     
+    var lat, lng, nts, notes, icon, marker, x;
+    
+/*gaz entry example: 
+"Placename": "Melksham", 
+        "County/Dept": "Wiltshire", 
+        "Comments": [
+            "Saxon origins at fording point over the River Avon", 
+            "Royal demesne with extensive forests at this time"
+        ], 
+        "Hardy Name": "Melksham, Wiltshire", 
+        "LatLong": [
+            51.373553, 
+            -2.137898
+        ], 
+        "References": [
+            "Melbourne - Mells', A Topographical Dictionary of England (1848), pp. 283-287. URL: http://www.british-history.ac.uk/report.aspx?compid=51142&strquery=melksham Date accessed: 21 June 2014", 
+            "https://en.wikipedia.org/wiki/Melksham ;  accessed 16 Aug 2015", 
+            "http://www.melkshamtown.co.uk/about-melksham/about-melksham ;  accessed 16 Aug 2015"
+        ], 
+        "notes&queries": [], 
+        "Modern Name": "No name change"
+ 
+ */
+
+
     for (var x in places_json) {
-        gplace = places_json[x].gplace;
-        lat = places_json[x].latLong[0];
-        lng = places_json[x].latLong[1];
-        nts = places_json[x].notes;
+        var record = places_json[x];
+        lat = record.LatLong? record.LatLong[0] : '';
+        lng = record.LatLong? record.LatLong[1] : '';
+        place = record.Placename? record.Placename : '';
+        county = record['County/Dept']? record['County/Dept'] : '';
+        hardy = record['Hardy Name']? record['Hardy Name'] : '';
+        modernName = record['Modern Name']? record['Modern Name'] : '';
+        
+        comments = record.Comments ? jQuery.map(record.Comments, function (x){return "<li>" + x + "</li>"}).join('') : undefined;
+        
+        references = record.References? jQuery.map(record.References, function (x){return "<li>" + x + "</li>"}).join('') : undefined;
+        
+        notesQueries = record['notes&queries']? record['notes&queries'] : '';
+        //nts = record.notes; TODO: transfer Kanter's notes
+        //TODO: provide properties for all the dlist item fields
         
         //a sort of jQuery listcomp to get notes elements if we've got 'em and generate paragraphs, one per list element.
         notes = nts ? jQuery.map(nts, function (x){return '<p>' + x + '</p>'}).join('') : undefined;
@@ -33,10 +71,13 @@ function onLoad() {
         icon = 'Images/red.png';
         
         iwcontent = '<div class="iwcontent"><table>\
-            <tr><td class="rubric">Hardy\'s Placename </td><td>' + x + '</td></tr>\
-            <tr><td class="rubric">Google\'s Placename </td><td>' + gplace + '</td></tr>\
-            <tr><td class="rubric">Latitude </td><td>' + lat + '</td></tr>\
-            <tr><td class="rubric">Longitude </td><td>' + lng + '</td></tr>\
+            <tr><td class="rubric">Location</td><td class="tvalue">' + place + ', ' + county + '</td></tr>\
+            <tr><td class="rubric">Hardy\'s Placename </td><td class="tvalue">' + hardy + '</td></tr>\
+            <tr><td class="rubric">LatLong </td><td class="tvalue">' + lat + ', ' + lng +'</td></tr>\
+            <tr><td class="rubric">Modern Name </td><td class="tvalue">' + modernName + '</td></tr>\
+            <tr><td class="rubric">Comments </td><td class="tvalue"><ul>' + comments + '</ul></td></tr>\
+            <tr><td class="rubric">References </td><td class="tvalue"><ul>' + references + '</ul></td></tr>\
+            <tr><td class="rubric">notes&queries </td><td class="tvalue">' + notesQueries + '</td></tr>\
             </table>'
             
         iwcontent = notes ? iwcontent + notes + '</div>': iwcontent + '</div>';
@@ -49,17 +90,48 @@ function onLoad() {
         });
         
         marker.setVisible(false);
-        places_json[x].placemark = marker;
-        places_json[x].iwindow = iwindow;
+        record.placemark = marker;
+        record.iwindow = iwindow;
+
+        google.maps.event.addListener(marker, 'click', (function(marker, x) {
+		    
+            return function() {
+                Shadowbox.open({
+                    options: {
+                        animate: false,
+                        onOpen: function(){
+                            $('#shadowbox_title_inner').css({
+                                'font-size': '36px',
+                                'padding': '24px 0'
+                            });
+                        },
+                        onClose: function(){
+                            $('#shadowbox_title_inner').css({
+                                'font-size': '12px',
+                                'padding': '5px 0'
+                            });
+                        }
+                    },
+                    content: marker.iwindow_content,
+                    player: "html",
+                    title: x,
+                    height: 600,
+                    width: 800
+                });
+            }
+        })(marker, x));
         
+/* 
         google.maps.event.addListener(marker, 'click', (function(marker, x) {
             return function() {
                 iwindow.setContent(marker.iwindow_content);
                 iwindow.open(map, marker)
             }
         })(marker, x));
-    }
+ */
 
+        
+    }
     
 	// Initialize Timeline
 	var eventSource = new Timeline.DefaultEventSource();
@@ -175,7 +247,11 @@ function onLoad() {
 
 	tl = Timeline.create(document.getElementById("JohnItinerary"), bandInfos);
 		
-	tl.loadJSON("data/Itinerary.js", function(json, url) { eventSource.loadJSON(json, url); });
+	//tl.loadJSON("data/Itinerary.js", function(json, url) { eventSource.loadJSON(json, url); });
+	tl.loadJSON("data/tst_events_obj.js", function(json, url) {
+	    eventVar = json; //jsust so I can see it in the console.
+	    eventSource.loadJSON(json, url);  
+	});
 
 	tl.loadXML("data/narrative.xml", function(xml, url) { eventSourceNarrative.loadXML(xml, url); updateMap()}); 
 	
@@ -206,6 +282,19 @@ function onResize() {
 }
 
 
+/*=====================================================
+ *  Extend Date with addDays and subtractDays methods
+ *  without arguments, defaults to one day.
+ *=====================================================
+ */
+
+Date.prototype.addDays = function(days){
+    var days = days ? days : 1;
+    return this.setDate(this.getDate() + days);}
+    
+Date.prototype.subtractDays = function(days){
+    var days = days ? days : 1;
+    return this.setDate(this.getDate() - days);}
 
 
 /*==================================================
@@ -216,11 +305,14 @@ function onResize() {
 function updateMap() {
 	var b2 = tl.getBand(2);
 	var dmax = b2.getMaxVisibleDate();
+	// to get a smaller span of days: dmax = dmax.setDate(dmax.getDate() - 3);
 	var dmin = b2.getMinVisibleDate();
+	// to get a smaller span of days: dmin = dmin.setDate(dmin.getDate() + 3);
 	var visiblePlaces = {};
 	var iterator = b2.getEventSource().getEventIterator(dmin,dmax);
 	while (iterator.hasNext()) {
-		visiblePlaces[iterator.next().getText()] = true;
+		visiblePlaces[iterator.next().getProperty('mapKey')] = true;
+		//visiblePlaces[iterator.next().getText()] = true; //TODO use: iterator.next().getProperty('mapKey')
 	}
 	for (var x in places_json) {
 		var placemark = places_json[x].placemark;
@@ -292,6 +384,7 @@ function scrollCenterTimeline(date) {
  *==================================================
  */
 
+
 // This fixes FF3 which wraps event labels to some small number.
 // I don't know the source of the problem, but this remedies the symptom.
 SimileAjax.Graphics._FontRenderingContext.prototype.computeSize = function(text) {
@@ -304,9 +397,77 @@ SimileAjax.Graphics._FontRenderingContext.prototype.computeSize = function(text)
 // is this still needed if I'm hosting 2.2?
 
 
+/*---------------------- HACKING THE TL EVENT OBJECT ----------------------*/
+//Timeline.OriginalEventPainter.prototype._showBubble calls evt.fillInfoBubble
+//which calls this.fillDescription(divBody) (fillDescription takes a div element); so we can overload fillDescription
+//here to get data out of the json event object and construct the elements shown
+//in the event bubble. Another option might be to hack the
+//Event.prototype.fillInfoBubble to add a separate <div> for the contents of the
+//eventData Object.
+
+Timeline.DefaultEventSource.Event.prototype.fillDescription = function(elmt) {
+    // 'this' is the Event object;
+    // TODO: generate a table from janet's data and provide a hide/show button
+    // in the bubble
+        elmt.innerHTML = this._description;
+        
+        
+        isEvDat = !!this.getProperty('eventData');
+        var evDat = this.getProperty('eventData');
+        
+        // TODO: consider just adding properties directly to the Event object,
+        // rather than using this eventData object
+        // TODO: Use a switch here to test for elements of the event data object?
+        if (evDat != undefined && 'pageToLoad' in evDat){
+            var pg = evDat.pageToLoad;
+            var pgBut = document.createElement('button');
+            pgBut.appendChild(document.createTextNode("Load Page: " + pg));
+            pgBut.addEventListener("click", function(){
+                SimileAjax.WindowManager.cancelPopups();
+                loadPage(pg);
+            });
+            elmt.appendChild(pgBut);
+        }
+    }
+
+
+
 /*------------- Experimenting with the painter bubble maker ---------------*/
+
+Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
+    //console.log(evt.getID());
+    var place = evt.getProperty("mapKey");
+    if (place in places_json){
+        mapmarker = places_json[place].placemark;
+        mapmarker.setAnimation(google.maps.Animation.BOUNCE);
+            setTimeout(function() {
+                 mapmarker.setAnimation(null)
+            }, 1600);
+    }
+    
+    
+
+    var div = document.createElement("div");
+    var themeBubble = this._params.theme.event.bubble;
+    evt.fillInfoBubble(div, this._params.theme, this._band.getLabeller());
+    
+    SimileAjax.WindowManager.cancelPopups();
+    SimileAjax.Graphics.createBubbleForContentAndPoint(div, x, y,
+        themeBubble.width, null, themeBubble.maxHeight);
+};
+
+/*  when we open a timeline bubble we can execute something on the corresponding map marker.
+    Access the marker thus: marker = places_json["Nottingham, Nottinghamshire"].placemark
+    and then do this:
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+        setTimeout(function() {
+             marker.setAnimation(null)
+        }, 6000);
+ */
+
+
 // Timeline.OriginalEventPainter.prototype._showBubble=function(x,y,evt){
-// 	// alert(console.log(evt.getID())) this returns id to console correctly
+// 	console.log(evt);} // this returns id to console correctly
 // 	id = evt.getID();
 // 	text = evt.getText();
 // 	start = evt.getStart();
