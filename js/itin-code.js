@@ -23,8 +23,8 @@ function onLoad() {
         maxWidth: 400
     });
     
-    var lat, lng, nts, notes, icon, marker, x;
-    
+    var lat, lng, nts, notes, icon, marker, iwcontent, x;
+    var place, county, hardy, modernName, comments, references, notesQueries;
 /*gaz entry example: 
 "Placename": "Melksham", 
         "County/Dept": "Wiltshire", 
@@ -121,6 +121,7 @@ function onLoad() {
             }
         })(marker, x));
         
+
 /* 
         google.maps.event.addListener(marker, 'click', (function(marker, x) {
             return function() {
@@ -147,6 +148,25 @@ function onLoad() {
 		theme.event.instant.icon = "Images/blue-diamond.png";
 		theme.event.highlightColors =  ["#FFFF00", "#FFC000", "#FF0000"];
 		theme.event.duration.color = "#449";
+/* 
+// note that we can not only set the properties that are created, but also
+// hijack other elements of the theme module like this titleStyler function. All
+// it does is set a class name for the title element (why does it need a
+// function for that? because it happens when it's called by either painters.js
+// or sources.js) but we can redefine it here to do other stuff as well
+		theme.event.bubble.titleStyler = function(elmt) {
+            elmt.className = "timeline-event-bubble-title";
+        
+            var showme = document.createElement("button");
+            showme.className = "showme-button";
+            showme.innerHTML = 'showmesomething';
+            showme.addEventListener ("click", function() {
+                console.log(places_json);
+                SimileAjax.WindowManager.cancelPopups();
+            });
+            elmt.appendChild(showme);
+        };
+ */
 	
 	var bandInfos = [
 		Timeline.createBandInfo({
@@ -267,6 +287,7 @@ function onLoad() {
 	    updateMap();
 	});			
 	
+
 }// end of onLoad
 	
 
@@ -356,7 +377,33 @@ function updateMap() {
 // gets:
 // lst1 = 641
 
+function showGeodataSB(location){
+    location = location.split(',')[0];
+    var mapmarker = places_json[location].placemark
+    Shadowbox.open({
+        options: {
+            animate: false,
+            onOpen: function(){
+                $('#shadowbox_title_inner').css({
+                    'font-size': '36px',
+                    'padding': '24px 0'
+                });
+            },
+            onClose: function(){
+                $('#shadowbox_title_inner').css({
+                    'font-size': '12px',
+                    'padding': '5px 0'
+                });
+            }
+        },
+        content: mapmarker.iwindow_content,
+        player: "html",
+        title: location,
+        height: 600,
+        width: 800
+    });
 
+}
 
 /*==================================================
  *  centerTimeline navigation links
@@ -409,9 +456,10 @@ Timeline.DefaultEventSource.Event.prototype.fillDescription = function(elmt) {
     // 'this' is the Event object;
     // TODO: generate a table from janet's data and provide a hide/show button
     // in the bubble
+    // this method of the event object has only one line:
         elmt.innerHTML = this._description;
-        
-        
+    
+    // remainder below is my code
         isEvDat = !!this.getProperty('eventData');
         var evDat = this.getProperty('eventData');
         
@@ -430,13 +478,18 @@ Timeline.DefaultEventSource.Event.prototype.fillDescription = function(elmt) {
         }
     }
 
-
-
-/*------------- Experimenting with the painter bubble maker ---------------*/
-
 Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
-    //console.log(evt.getID());
+    var div = document.createElement("div");
+/* ============================= my code follows =============================
+/   we're going to use the OriginalEventPainter showBubble method to act on the
+/   map markers: when a TL bubble is opened, the corresponding map marker is
+/   bounced to identify it. Also we can here attach a button to the TL bubble
+/   here where it has access to both place and mapmarker
+/  ===========================================================================*/    
     var place = evt.getProperty("mapKey");
+    var mapmarker = undefined;
+    
+    /* ==== on open tl bubble, bounce map marker ====*/
     if (place in places_json){
         mapmarker = places_json[place].placemark;
         mapmarker.setAnimation(google.maps.Animation.BOUNCE);
@@ -445,15 +498,26 @@ Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
             }, 1600);
     }
     
+    /* ==== add button to timeline bubble ====*/
+    if (!!place){
+        var geoButton = document.createElement("button");
+        geoButton.className = "geobutton";
+        geoButton.innerHTML = 'show geodata';
+        geoButton.addEventListener ("click", function() {
+            showGeodataSB(place);
+            SimileAjax.WindowManager.cancelPopups();
+        });
+        div.appendChild(geoButton);
+    }
+/* ============================== end my code  ============================== */
     
-
-    var div = document.createElement("div");
     var themeBubble = this._params.theme.event.bubble;
     evt.fillInfoBubble(div, this._params.theme, this._band.getLabeller());
-    
+
     SimileAjax.WindowManager.cancelPopups();
     SimileAjax.Graphics.createBubbleForContentAndPoint(div, x, y,
         themeBubble.width, null, themeBubble.maxHeight);
+
 };
 
 /*  when we open a timeline bubble we can execute something on the corresponding map marker.
@@ -899,6 +963,8 @@ function pager(pgreq){
 	fld.attr("value","");
 }
 
+
+
 function loadPage(pgno){
 	Shadowbox.open({
 		options: {
@@ -938,8 +1004,8 @@ $(document).ready(function($){
         });
     };
 
-// Make an accordion from dl content. Opens w/1st dd showing.
-	$('#about_list dd:not(:first)').hide();
+// Make an accordion from dl content. Opens w/1st dd showing (or #mefirst).
+	$('#about_list dd:not(#mefirst)').hide();
 
 	$('#about_list dt').click(function(){
 		$thisdt = $(this);

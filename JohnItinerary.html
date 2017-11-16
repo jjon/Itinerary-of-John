@@ -10,7 +10,7 @@
 	<script type="text/javascript">
 		Timeline_ajax_url="js/timeline/src/ajax/api/simile-ajax-api.js";
 		Timeline_urlPrefix="js/timeline/src/webapp/api/";       
-		Timeline_parameters="bundle=true";
+		Timeline_parameters="bundle=false";
 	</script>
 	
 	<script type"text/javascript">debugvar = "foobar";</script>
@@ -23,15 +23,11 @@
 	
 	<script src="js/johns-reign.js" type="text/javascript"></script>
 
-	<script src="data/tst_gazetteer.js" type="text/javascript">
-		<!~~ generate js variable here for data as above for Timeline? ~~>
-	</script>
+	<script src="data/tst_gazetteer.js" type="text/javascript"></script>
 
-<!-- 
-	<script src="data/gazetteer.js" type="text/javascript">
-		<!~~ generate js variable here for data as above for Timeline? ~~>
-	</script>
- -->
+    <!-- oldgaz data -->
+    <script src="data/gazetteer.js" type="text/javascript"></script>
+
 	<script src="js/itin-code.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
@@ -113,9 +109,10 @@
 					</dd>
 					
 					<dt>Construction Zone</dt>
-					<dd>
+					<dd id='mefirst' style="max-height: 250px; overflow-y: scroll">
 						<img src="Images/construct.gif" alt="under construction" style="float: left; margin-right: 2em" />
 						<ul>
+							<li>Oct. 2017 &mdash; another remodel to present a goldmine of useful data generously provided by Janet Gillespie. In the course of her dissertation research, Gillespie has patiently and precisely investigated ALL of the sites mentioned in Hardy's Itinerary of John, assembled geographical coordinates and source material on each one, and commented on the importance of each in the context of John's itinerations.<p>As mentioned below, the first generation of map coordinates for this site were the result of a very crude geocoding automation. Gillespie's data are far more complete and accurate and henceforth they will constitute the 'canonical' gazetteer for this site.</p><p>I'm very much indebted to Janet for her generous contribution and ongoing collaboration in this project.</p></li>
 							<li>Feb. 2009 &mdash; remodel of the site to make better use of screen real estate making use of the jQuery and Shadowbox javascript libraries</li>
 							<li>The information bubbles attached to the events in the timeline currently contain only the short title and the full name used by Hardy in his gazetteer. Some of the bubbles also contain links that will open the pages of the <cite>Rot. Lit. Pat.</cite> for the period in question. Not all of these links have been provided yet.</li>
 							<li>There are 642 named places in Hardy's itinerary. Currently the map here has map-markers for 457 of these. These map-markers are the result of the crudest sort of querying of the Google geocoding interface, as such, they are in NO WAY authoritative. (you may find one of these map-markers on Java, not exactly in John's ambit!) Identifying and disambiguating the historical place-names mentioned in <cite>Rot. Lit. Pat.</cite> is an ongoing research project.</li>

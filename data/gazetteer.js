@@ -1,4 +1,4 @@
-places_json = {
+oldgaz = {
     "Bury-St. Edmunds, Suffolk": {
         "gplace": "Bury St Edmunds, Suffolk", 
         "latLong": [
