@@ -1004,8 +1004,9 @@ $(document).ready(function($){
         });
     };
 
-// Make an accordion from dl content. Opens w/1st dd showing (or #mefirst).
-	$('#about_list dd:not(#mefirst)').hide();
+// Make an accordion from dl content. Opens w/.mefirst showing.
+    $('#about_list dd').hide();
+	$('#about_list dd.mefirst').show().prev().css({"background": "#FF9500", "color": "#221"});
 
 	$('#about_list dt').click(function(){
 		$thisdt = $(this);

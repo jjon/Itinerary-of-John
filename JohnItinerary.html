@@ -65,7 +65,7 @@
 		<div id="content-divs">
 			<div id=tab1_content>
 				<dl id="about_list">
-					<dt style="background: #FF9500; color: #221;">This Site</dt>
+					<dt>This Site</dt>
 					<dd>
 						The timeline above displays the itinerary of <span class="ttip">King John of England</span> for nearly every day of his seventeen year reign. Like most medieval kings, John's government was relentlessly itinerant. The places John visited are plotted on the map, changing dynamically, reflecting the places displayed in the lower band of the timeline. The timeline can be scrolled left and right by clicking and dragging, and you can observe John's progress as he traveled throughout England, Wales, Ireland, and France. The top band displays contextual events of general interest for the period, and the highlighted bar in the middle of the band represents the period of time displayed in the lower band.
 						
@@ -85,19 +85,25 @@
 					</dd>
 					
 					<dt>The Itinerary</dt>
-					<dd>
+					<dd class='mefirst'>
 						The publication of the patent rolls alone was a boon to historians of medieval England, but Thomas Hardy went further. For the 1835 edition, Hardy collated information from the <i>teste</i> and dating clauses of the patent letters themselves with information drawn from the charter and close rolls, the wardrobe accounts, and the <i>praestita</i> rolls. Based on this collation, Hardy was able to determine the exact itinerary of the king for nearly every day of his reign. This was a remarkable feat of scholarship, and Hardy's itinerary has been an invaluable resource for historians ever since. (The pages of Hardy's original itinerary tables begin <a class="text_link" href="#" onclick="loadPage('-026'); return false">here</a>.)
 						
 						<p>Included below Hardy's tables was a gazetteer of the places mentioned, with the dates for each place listed. The data displayed in this timeline and map was captured by scanning the gazetteer, processing the image with OCR software, and parsing the result with a python script to produce a JavaScript object for the timeline software.</p>
 						
-						<p>Unfortunately, the <cite>Rot. Lit. Pat.</cite> exists only in the folio edition published in 1835. This is a fairly uncommon volume, available only in extensive research libraries. The purpose of this site is to offer the data of Hardy's itinerary in a more convenient and widely accessible format, and link it more closely with the patent letters themselves. Clicking on any of the events in the lower band of the timeline above will bring up an information bubble which contains links to the pages of the <cite>Rot. Lit. Pat</cite> that contain dated letters for the relevant period. Because the data in the itinerary was drawn from a variety of sources, not all of the events on the timeline will have links, and not all of the events will be represented in the patent letters at all.</p>
+						<p>Unfortunately, the <cite>Rot. Lit. Pat.</cite> is a fairly uncommon volume, available only in extensive research libraries. The purpose of this site is to offer the data of Hardy's itinerary in a more convenient and widely accessible format, and link it more closely with the patent letters themselves. Clicking on any of the events in the lower band of the timeline above will bring up an information bubble which contains links to the pages of the <cite>Rot. Lit. Pat</cite> that contain dated letters for the relevant period. Because the data in the itinerary was drawn from a variety of sources, not all of the events on the timeline will have links, and not all of the events will be represented in the patent letters at all.</p>
+						
+						<p><span style="font-size: 120%; color: #FF9500">October, 2017:</span> For the current re-design of this site, in conversation with Dr. Gillespie, it became clear that we were both working from slightly different resources. The folio edition of the <cite>Rotuli litterarum patentium in Turri londinensi asservati</cite> was published in 1835 by Eyre and Spottiswoode. Hardy's Itinerary was included with his introduction to this volume (folio ed: http://www.worldcat.org/oclc/38630269). However, also in 1835 Hardy's introduction and itinerary appeared in a separate quarto volume <cite>A Description of the Patent Rolls in the Tower of London; to which is added an Itinerary of King John with preferatory observations.</cite> (quarto ed: http://www.worldcat.org/oclc/895817071).</p>
+						
+						<p>In the main, this site treats the folio edition of the <cite>Rot. Lit. Pat.</cite> as canonical, and the page scans included under the "Page Images" tab above come from that edition. However, I had presumed that the quarto edition was identical. It is not. The number of discrepancies that exist between the two publications is remarkably small, but potentially significant. Dr. Gillespie has carefully cataloged these discrepancies in a <a class="text_link" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml">summary table</a>. Moreover, where possible, an indication that a discrepancy exists will be provided in the relevant timeline bubble and in the corresponding geographical data.
+						
+						
 					</dd>
 					
 					<dt>The Map</dt>
 					<dd>
 						Place-names have always been a problem for students of medieval records. Places change their names; the same place-name is sometimes applied to more than one location; places, once important, sometimes disappear altogether and are known only by their names in the records.
 						
-						<p>The place markers on the map were derived by querying the Google geocoding interface using Hardy's place-names. This was a pretty crude first pass at providing geographical data for the timeline events. The procedure results in many errors since Google knows nothing of medieval places. The place markers on the map should therefor not be regarded as authoritative. The research and disambiguation of all the 600 or so places mentioned in Hardy's itinerary is a research project that will go forward using this first pass as a starting point.</p>
+						<p>The place markers on the map were initially derived by querying the Google geocoding interface using Hardy's place-names. This was a pretty crude first pass at providing geographical data for the timeline events. The procedure resulted in many errors since Google knows nothing of medieval places. Fortunately, as a result of the generous contribution of Janet Gillespie (see "Construction Zone" below), detailed and accurate coordinates, as well as other supporting geographic information has now been supplied. The map markers now reflect these coordinates, and clicking on any of the map markers will open a dialog containing the current data for that place.</p>
 					</dd>
 			
 					<dt>Record Type</dt>
@@ -109,7 +115,7 @@
 					</dd>
 					
 					<dt>Construction Zone</dt>
-					<dd id='mefirst' style="max-height: 250px; overflow-y: scroll">
+					<dd style="max-height: 250px; overflow-y: scroll">
 						<img src="Images/construct.gif" alt="under construction" style="float: left; margin-right: 2em" />
 						<ul>
 							<li>Oct. 2017 &mdash; another remodel to present a goldmine of useful data generously provided by Janet Gillespie. In the course of her dissertation research, Gillespie has patiently and precisely investigated ALL of the sites mentioned in Hardy's Itinerary of John, assembled geographical coordinates and source material on each one, and commented on the importance of each in the context of John's itinerations.<p>As mentioned below, the first generation of map coordinates for this site were the result of a very crude geocoding automation. Gillespie's data are far more complete and accurate and henceforth they will constitute the 'canonical' gazetteer for this site.</p><p>I'm very much indebted to Janet for her generous contribution and ongoing collaboration in this project.</p></li>
@@ -135,17 +141,25 @@
 						</ul>
 						
 						<p>The Itinerary of King John project is intended to be collaborative. Comments, corrections, and questions can be addressed to me at jjcrump [at] myuw.net until such time as the wiki framework is in place.</p>
+						
 					</dd>
 					
 					<dt>Acknowlegements &amp; Rights</dt>
 					<dd>
-						Great thanks and kudos belong to David Huynh, the principal author of the SIMILE timeline API. He has created a tool that will be a great boon to historians, and without his direct assistance, this resource would not have been possible.
+					    The most recent revision of this site owes its genesis to Janet Gillespie {include contact information here?} as described above ("Construction Zone"), Gillespie's data represents a giant step forward in the scope and utility of this resource. Her dissertation research was supported by St. Andrews University whom we also gratefully acknowledge.
+					
+						<p>Great thanks and kudos belong to David Huynh, the principal author of the SIMILE timeline API. He has created a tool that will be a great boon to historians, and without his direct assistance, this resource would not have been possible.</p>
 						
 						<p>Thanks also to the Suzzallo Library at the University of Washington for allowing me to scan the full text of their copy of the <cite>Rot. Lit. Pat.</cite>. Also thanks to the Suzzallo Library office of Digital Initiatives for allowing me to use their scanning equipment and software (principally ABBYY FineReader OCR software, and Photoshop) for capturing the data and preparing the page scans for display on the web.</p>
 						
 						<p>So far as I know, the <cite>Rotuli Litterarum Patentium</cite> is in the public domain. Unless otherwise noted, all other text on this site, the RDF encoded data, and the software code that enables the site (exclusive of the SIMILE timeline and Google Maps APIs) are offered under the following license:</p>
 						
 						<p><span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">The Itinerary of King John Project</span> by <a class="text_link" xmlns:cc="http://creativecommons.org/ns#" href="http://home.myuw.net/jjcrump/Timelines/itinerary/JohnItinerary.html" property="cc:attributionName" rel="cc:attributionURL">J. J. Crump</a> is licensed under a <a class="text_link" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.</p>
+						<div style="text-align: center">
+						<img width='150px' src="Images/St-ANdrews-University-SHeild.png" />
+						<img src="Images/UWseal.png" />
+						<p>While we acknowledge and are grateful for the help of these institutions, they do not sponsor or fund this project, and bear no responsibility for it.</p>
+						</div>
 					</dd>
 				</dl>
 			</div> <!-- End Tab 1 contents -->
@@ -162,7 +176,7 @@
 					
 					<dt>Band Three</dt>
 					<dd>
-					The third band displays the elements of John's Itinerary as they appeared in the introduction to the Patent Rolls. Unless you have a research university handy, consulting the patent rolls can be a problem. Hardy's itinerary, published in 1835, is invaluable, but not the sort of thing that you can pick up at your local used book store. In unwieldy folio volumes, the itinerary was published as a series of tables appended to Hardy's introduction. This format was not ideal. An internet browser now makes it possible to display this data in a more graphically intelligible format. Clicking on these events will display a bubble containing a link to a google map of the referenced place, and any place-name information that Hardy may have included. The itinerary is thus a useful gazetteer to many of the geographical locations of importance in early thirteenth-century European history. I have used the place-names exactly as they appear in Hardy.<br /></dd>
+					The third band displays the elements of John's Itinerary as they appeared in the introduction to the Patent Rolls. Unless you have a research university handy, consulting the patent rolls can be a problem. Hardy's itinerary, published in 1835, is invaluable, but not the sort of thing that you can pick up at your local used book store. In unwieldy folio volumes, the itinerary was published as a series of tables appended to Hardy's introduction. This format was not ideal. An internet browser now makes it possible to display this data in a more graphically intelligible format. Clicking on these events will cause the corresponding map marker to bounce in order to identify it. Also, a bubble will be displayed that contains a link to the pages of the Rot.Lit.Pat. that contain letters dated for that date. The bubble also contains a button that will display the available geographic information for the referenced place. The itinerary is thus a useful gazetteer to many of the geographical locations of importance in early thirteenth-century European history. I have used the place-names exactly as they appear in Hardy.<br /></dd>
 					
 					<dt>Controls</dt>
 					<dd>
