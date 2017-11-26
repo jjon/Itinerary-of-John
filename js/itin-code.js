@@ -268,7 +268,7 @@ function onLoad() {
 	tl = Timeline.create(document.getElementById("JohnItinerary"), bandInfos);
 		
 	//tl.loadJSON("data/Itinerary.js", function(json, url) { eventSource.loadJSON(json, url); });
-	tl.loadJSON("data/tst_events_obj.js", function(json, url) {
+	tl.loadJSON("data/tst_events_objII.js", function(json, url) {
 	    eventVar = json; //jsust so I can see it in the console.
 	    eventSource.loadJSON(json, url);  
 	});
@@ -287,7 +287,6 @@ function onLoad() {
 	    updateMap();
 	});			
 	
-
 }// end of onLoad
 	
 
@@ -480,6 +479,7 @@ Timeline.DefaultEventSource.Event.prototype.fillDescription = function(elmt) {
 
 Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     var div = document.createElement("div");
+    
 /* ============================= my code follows =============================
 /   we're going to use the OriginalEventPainter showBubble method to act on the
 /   map markers: when a TL bubble is opened, the corresponding map marker is
@@ -509,7 +509,7 @@ Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
         });
         div.appendChild(geoButton);
     }
-/* ============================== end my code  ============================== */
+    /* ============================ end my code  ============================ */
     
     var themeBubble = this._params.theme.event.bubble;
     evt.fillInfoBubble(div, this._params.theme, this._band.getLabeller());
@@ -670,6 +670,28 @@ Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
 // 
 // Timeline.JohnSpanHighlightDecorator.prototype.softPaint = function() {
 // };
+
+
+/*==================================================
+ *  Fix the soft keyboard bug. Touch on event in tl brought up
+ *  the keyboard along with the bubble. Commenting out
+ *  this._keyboardInput.focus(); fixed it.
+ *==================================================
+ */
+
+Timeline._Band.prototype._onMouseUp = function(innerFrame, evt, target) {
+/*  We can't just comment out _keyboardInput.focus(), 'cause that
+    breaks the keyboard scrolling behavior for desktop. But, we can
+    test for the mediaQuery, yay!
+    (fix somethin' break somethin' else; fix that.) */
+        
+    this._dragging = false;
+    if (window.matchMedia('(pointer: coarse)').matches){
+        this._keyboardInput.blur()
+    } else {
+        this._keyboardInput.focus()
+    }
+};
 
 /*==================================================
  *  setupFilterHighlightControls
@@ -916,6 +938,7 @@ function loadScan(pgToLoad){
 }
 
 function pager(pgreq){
+    // would a `switch` be better somehow?
 	var fld = $('#shadowbox_title_inner').find('#pagefield');
 	var imageElement = $('#shadowbox_content').find('#scan');
 	var pgNoRegex = new RegExp(/(^.*pageImages\/)(.*)(\.jpg)$/);
@@ -962,7 +985,6 @@ function pager(pgreq){
 	
 	fld.attr("value","");
 }
-
 
 
 function loadPage(pgno){
@@ -1031,9 +1053,59 @@ $('.ttip').click(function(ev){
 	SimileAjax.Graphics.createBubbleForContentAndPoint(bubl, mouseX, mouseY, 100, 'bottom');
 });
 
-	
+/*==============================  SCROLL MOBILE  ==============================
+ *  Well, whaddya know: this works. A bit crude, but now we can scroll timeline
+ *  on mobile. Better would be to add the right listeners to the right
+ *  elements to get real scrolling behavior for the bands. But this'll do.
+ *=============================================================================
+ */
 
+$("#rarrow").on('touchstart', function(touchevt){
+    touchevt.preventDefault();
+    $(this).addClass("active");
+    intervalIDright = setInterval(function(){
+        var b1 = tl.getBand(1)
+        var b1input = $(".timeline-band-input > input").get(1)
+        var e = jQuery.Event( "keydown", { keyCode: 39 } );
+        b1._onKeyDown(b1input, e, b1input)    
+    }, 30)
+});
+    
+$("#rarrow").on('touchend', function(touchendevt) {
+    $(this).removeClass("active");
+    touchendevt.preventDefault();
+    clearInterval(intervalIDright);
+});
+
+$("#larrow").on('touchstart', function(touchevt){
+    touchevt.preventDefault();
+    $(this).addClass("active");
+    intervalIDleft = setInterval(function(){
+        var b1 = tl.getBand(1)
+        var b1input = $(".timeline-band-input > input").get(1)
+        var e = jQuery.Event( "keydown", { keyCode: 37 } );
+        b1._onKeyDown(b1input, e, b1input)    
+    }, 30)
+});
+    
+$("#larrow").on('touchend', function(touchendevt) {
+    $(this).removeClass("active");
+    touchendevt.preventDefault();
+    clearInterval(intervalIDleft);
+});
+
+/* 1st try at mobile scroll. This wasn't satisfactory
+$("#larrow").click(function(evt){
+    var dt = tl.getBand(0).getMinVisibleDate();
+    tl.getBand(0).scrollToCenter(dt);
+});	
+
+$("#rarrow").click(function(evt){
+    var dt = tl.getBand(0).getMaxVisibleDate();
+    tl.getBand(0).scrollToCenter(dt);
+});	
 	
+ */
 
 
 }); // end $(document).ready()

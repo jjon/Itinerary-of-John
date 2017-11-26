@@ -83,7 +83,24 @@ dt {
 	color: #fff !important;
 }
 
-/* #mefirst {background-color: #FF9500; color: #221;} */
+
+.arbut {
+    display: none;
+}
+@media (pointer: coarse) {
+    #scrollbuttons {text-align: center;}
+    .arbut {
+        display: inline;
+        font-size: 120%;
+        font-weight: 700;
+        width: 45%;
+        height: 5em;
+        margin-bottom: 3em;
+        border: 5px #99baaa;
+        border-style: outset;
+    }
+    .arbut.active {background-color: #44b780;}
+}
 
 dd {
 	margin-left: 1.5em;
@@ -91,7 +108,7 @@ dd {
 	margin-bottom: .5em;
 }
 
-.geobutton{
+.geobutton {
     font-size: 80%;
     background-color: #9ba;
     cursor: pointer;
