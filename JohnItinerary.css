@@ -27,7 +27,7 @@ body {
 }
 /* End Column Layout */
 
-
+.logos {padding: 0px 24px}
 #map-box {
 	border-style: solid;
 	border-color:  #887755;
@@ -167,16 +167,26 @@ a.year:hover{
 	color: #f00
 }
 
-a.text_link{
+a.text-link{
 	color: #800;
 	text-decoration: none;
-	font-weight: bold
+	font-weight: bold;
 }
 
-a.text_link:hover{
-	color: #f00
+a.text-link:hover{
+	color: #f00;
+	text-decoration: underline;
 }
 
+a.text-link.external {
+	background: url("Images/ex-link-red.png") no-repeat right;
+	padding-right: .8em;
+}
+
+.email-span {
+    font-size: smaller;
+    color: #555;
+}
 
 #navlist {
 }
