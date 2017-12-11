@@ -3155,7 +3155,7 @@ S'Royal manor leased eg held from William I by Gilbert de Gaunt ( nephew) who ha
 p1693
 asg32
 (lp1694
-S'Fixed '
+S'Fixed'
 p1695
 asg34
 S'No name change'
@@ -5311,11 +5311,11 @@ aS'https://en.wikipedia.org/wiki/Holwell,_Dorset ;  accessed 11 Aug 2015'
 p2826
 asg26
 (lp2827
-S'Taken as Holwell in the centre of the Vale of Blackmore. '
+S'Taken as Holwell in the centre of the Vale of Blackmore.'
 p2828
 aS'The vale was on the edge of the Royal forest -  ?hunting in view of repeated September visits'
 p2829
-aS'"Braydon, Chippenham and Melksham, and Selwood Forests developed from the great belt of woodland known to the Saxons in the 9th century as \'Sealwudu\', which stretched from the Thame valley to the Vale of Blackmore." '
+aS'"Braydon, Chippenham and Melksham, and Selwood Forests developed from the great belt of woodland known to the Saxons in the 9th century as \'Sealwudu\', which stretched from the Thame valley to the Vale of Blackmore."'
 p2830
 asg32
 (lp2831
