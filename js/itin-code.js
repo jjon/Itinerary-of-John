@@ -50,18 +50,30 @@ function onLoad() {
 
     for (var x in places_json) {
         var record = places_json[x];
-        lat = record.LatLong? record.LatLong[0] : '';
-        lng = record.LatLong? record.LatLong[1] : '';
+        lat = record.LatLong? record.LatLong[0] : 0;
+        lng = record.LatLong? record.LatLong[1] : 0;
+/* 
+50.0639349,-0.2508653 is an arbitrary point in the middle of the English Channel. This is an ugly hack to fix and even uglier bug that may, or may not, result from having latlng undefined (that would be 2 places in places_json). The bug throws "Uncaught RangeError: Maximum call stack size exceeded" and somebody on stackoverflow thinks its because of undefined latlng. <https://stackoverflow.com/questions/15671480/uncaught-rangeerror-maximum-call-stack-size-exceeded-google-maps-when-i-try-to> This would seem to be the case because on rapid scrolling past "1200-07-16" "Bois, Saintonge" or "1213-04-08" "Inter Porchester Et Farnham" seems to force the RangeError. The ternary logic of the variable assignment for lat,lng seems not to help, but entering these arbitrary coordinates in the relevant entries in places_json seems to fix it. It's a stupid work-around, but maybe it'll do for now.
+TODO test again the ternary statement now that the else is a number instead of a string.
+*/
         place = record.Placename? record.Placename : '';
         county = record['County/Dept']? record['County/Dept'] : '';
         hardy = record['Hardy Name']? record['Hardy Name'] : '';
         modernName = record['Modern Name']? record['Modern Name'] : '';
         
-        comments = record.Comments ? jQuery.map(record.Comments, function (x){return "<li>" + x + "</li>"}).join('') : undefined;
+        visits = document.createElement('select');
+        vcount = record.visits.length;
+        for (var v = 0; v < vcount; v++){
+            var opt = document.createElement('option');
+            opt.innerHTML = record.visits[v];
+            opt.value = record.visits[v];
+            visits.appendChild(opt);
+        };
+
+        comments = record.Comments ? jQuery.map(record.Comments, function (x){return "<li>" + x + "</li>"}).join('') : undefined;        
+        references = record.References? jQuery.map(record.References, function (x){return "<li>" + x + "</li>"}).join('') : undefined;        
+        notesQueries = record['notes&queries']? jQuery.map(record['notes&queries'], function (x){return "<li>" + x + "</li>"}).join('') : undefined;
         
-        references = record.References? jQuery.map(record.References, function (x){return "<li>" + x + "</li>"}).join('') : undefined;
-        
-        notesQueries = record['notes&queries']? record['notes&queries'] : '';
         //nts = record.notes; TODO: transfer Kanter's notes
         //TODO: provide properties for all the dlist item fields
         
@@ -73,13 +85,17 @@ function onLoad() {
         iwcontent = '<div class="iwcontent"><table>\
             <tr><td class="rubric">Location</td><td class="tvalue">' + place + ', ' + county + '</td></tr>\
             <tr><td class="rubric">Hardy\'s Placename </td><td class="tvalue">' + hardy + '</td></tr>\
+            <tr><td class="rubric">Hardy records ' + vcount +' visits here</td><td id="Visits" class="tvalue">\
+                <select onchange="centerTimeline(this.value)">\
+                <option>select a date to move timeline</option>' + visits.innerHTML + '</select></td></tr>\
             <tr><td class="rubric">LatLong </td><td class="tvalue">' + lat + ', ' + lng +'</td></tr>\
             <tr><td class="rubric">Modern Name </td><td class="tvalue">' + modernName + '</td></tr>\
             <tr><td class="rubric">Comments </td><td class="tvalue"><ul>' + comments + '</ul></td></tr>\
             <tr><td class="rubric">References </td><td class="tvalue"><ul>' + references + '</ul></td></tr>\
             <tr><td class="rubric">notes&queries </td><td class="tvalue">' + notesQueries + '</td></tr>\
             </table>'
-            
+        
+        
         iwcontent = notes ? iwcontent + notes + '</div>': iwcontent + '</div>';
            
         marker = new google.maps.Marker({
@@ -268,7 +284,7 @@ function onLoad() {
 	tl = Timeline.create(document.getElementById("JohnItinerary"), bandInfos);
 		
 	//tl.loadJSON("data/Itinerary.js", function(json, url) { eventSource.loadJSON(json, url); });
-	tl.loadJSON("data/tst_events_objII.js", function(json, url) {
+	tl.loadJSON("data/tst_events_objIV.js", function(json, url) {
 	    eventVar = json; //jsust so I can see it in the console.
 	    eventSource.loadJSON(json, url);  
 	});
@@ -330,13 +346,14 @@ function updateMap() {
 	// to get a smaller span of days: dmin = dmin.setDate(dmin.getDate() + 3);
 	var visiblePlaces = {};
 	var iterator = b2.getEventSource().getEventIterator(dmin,dmax);
+	var null_coords = ["Bois (1)", "Inter Porchester Et Farnham"];
 	while (iterator.hasNext()) {
 		visiblePlaces[iterator.next().getProperty('mapKey')] = true;
 		//visiblePlaces[iterator.next().getText()] = true; //TODO use: iterator.next().getProperty('mapKey')
 	}
 	for (var x in places_json) {
 		var placemark = places_json[x].placemark;
-		if(x in visiblePlaces) {
+		if(x in visiblePlaces && null_coords.indexOf(x) == -1) {
 			placemark.setVisible(true);
 			
 			if (!map.getBounds().contains(placemark.position)){
@@ -347,7 +364,6 @@ function updateMap() {
 		}
 	}
 }
-
 
 
 /*==================================================
@@ -409,7 +425,9 @@ function showGeodataSB(location){
  *==================================================
  */
 function centerTimeline(date) {
+    Shadowbox.close();
     tl.getBand(0).setCenterVisibleDate(Timeline.DateTime.parseGregorianDateTime(date));
+    updateMap();
 }
 
 // use select element in the controls tab to center timeline on a particular year
@@ -1008,8 +1026,6 @@ function loadPage(pgno){
 		content: $('#page_images').html()
 	});
 };
-
-
 
 /*==================================================
  *  UI tweaks with jQuery
