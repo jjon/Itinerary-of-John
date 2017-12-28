@@ -64,10 +64,10 @@ dt {
 
 .control-box {
 	float: left;
-	width: 160px;
+	width: 200px;
 	padding: 10px;
 	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
-	font-size: 9pt;
+	font-size: 11pt;
 }
 
 #about_list dt {
@@ -112,13 +112,14 @@ dd {
     font-size: 80%;
     background-color: #9ba;
     cursor: pointer;
-    border: none;
+    border: 1px #8a9 groove;
     border-radius: 6px;
     float: right;
-    height: 20px;
-    margin-right: 0px;
-    
+    height: 16px;
+    text-align: center;
+    margin-right: 10px;
 }
+.geobutton:hover {border: none}
 
 .iwcontent {
     height: 100%;
@@ -188,6 +189,25 @@ a.text-link.external {
     color: #555;
 }
 
+ul.ui-autocomplete {
+    max-height: 185px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #482a00;
+	background: #8e2e01;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+
 #navlist {
 }
 
@@ -227,9 +247,10 @@ a.text-link.external {
 	font-weight:bold;
 }
 
-/*
-.tab:hover {background-color: #ff9500}
-*/
+#tab3_content {
+    height: -webkit-fill-available;
+    height: 100vh;
+}
 
 #content-divs {
 	background: #FFF9D6;

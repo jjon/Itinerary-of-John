@@ -8,8 +8,27 @@
 
 var tl = null;
 var map = null;
-var geocoder = null; // what the hell was this for?      
 var eventVar = null; // DEBUG: just so I can see it in the console.
+
+/*==========================================================================
+ *  Lets have access to the geodata as an object keyed by Hardy Names, with
+ *  values being a list of objects having that 'Hardy Name'.
+ *==========================================================================
+ */
+var hardyDict = function(){
+    plist = Object.values(places_json);
+    pobj = Object();
+    for (var x=0; x<plist.length; x++){
+        var d = plist[x]
+        if (!pobj[d['Hardy Name']]){
+            pobj[d['Hardy Name']] = [d];
+        } else {
+            pobj[d['Hardy Name']].push(d);
+        };
+    };
+    return pobj;
+}();
+
 
 function onLoad() {
 	// Initialize google map
@@ -50,12 +69,11 @@ function onLoad() {
 
     for (var x in places_json) {
         var record = places_json[x];
-        lat = record.LatLong? record.LatLong[0] : 0;
-        lng = record.LatLong? record.LatLong[1] : 0;
-/* 
-50.0639349,-0.2508653 is an arbitrary point in the middle of the English Channel. This is an ugly hack to fix and even uglier bug that may, or may not, result from having latlng undefined (that would be 2 places in places_json). The bug throws "Uncaught RangeError: Maximum call stack size exceeded" and somebody on stackoverflow thinks its because of undefined latlng. <https://stackoverflow.com/questions/15671480/uncaught-rangeerror-maximum-call-stack-size-exceeded-google-maps-when-i-try-to> This would seem to be the case because on rapid scrolling past "1200-07-16" "Bois, Saintonge" or "1213-04-08" "Inter Porchester Et Farnham" seems to force the RangeError. The ternary logic of the variable assignment for lat,lng seems not to help, but entering these arbitrary coordinates in the relevant entries in places_json seems to fix it. It's a stupid work-around, but maybe it'll do for now.
-TODO test again the ternary statement now that the else is a number instead of a string.
-*/
+        lat = record.LatLong[0] ? record.LatLong[0] : 0;
+        lng = record.LatLong[1] ? record.LatLong[1] : 0;
+        /* 
+        These ternary operators work to set lat/lng to 0. This is an ugly hack to fix and even uglier bug that may, or may not, result from having latlng undefined (that would be 2 places in places_json). The bug throws "Uncaught RangeError: Maximum call stack size exceeded" and somebody on stackoverflow thinks its because of undefined latlng. <https://stackoverflow.com/questions/15671480/uncaught-rangeerror-maximum-call-stack-size-exceeded-google-maps-when-i-try-to> This would seem to be the case because on rapid scrolling past "1200-07-16" "Bois, Saintonge" or "1213-04-08" "Inter Porchester Et Farnham" seems to force the RangeError. latlng 0,0 isn't optimal (because it's a real place) but it'll do because we leave hidden the markers found in the null_coords list in updateMap(), see below.
+        */
         place = record.Placename? record.Placename : '';
         county = record['County/Dept']? record['County/Dept'] : '';
         hardy = record['Hardy Name']? record['Hardy Name'] : '';
@@ -520,7 +538,7 @@ Timeline.OriginalEventPainter.prototype._showBubble = function(x, y, evt) {
     if (!!place){
         var geoButton = document.createElement("button");
         geoButton.className = "geobutton";
-        geoButton.innerHTML = 'show geodata';
+        geoButton.innerHTML = 'show data';
         geoButton.addEventListener ("click", function() {
             showGeodataSB(place);
             SimileAjax.WindowManager.cancelPopups();
@@ -1063,6 +1081,17 @@ $(document).ready(function($){
 		}).prev().css({"background": "#221", "color": "#FF9500"});
 	});
 	
+	//TODO: use Hardy Name instead: jQuery.map(places_json, function(x){return x['Hardy Name'];})
+    jQuery("#searchplaces").autocomplete({
+        source: Object.keys(places_json),
+        appendTo: $("#Places"),
+        select: function( event, ui ) {showGeodataSB(ui.item.value);}
+        //focus: function(event, ui){console.log(event.toElement());}
+    });
+
+
+
+
 // Set tab 4 to call loadPage
 	$('#tab4').click(loadPage);
 

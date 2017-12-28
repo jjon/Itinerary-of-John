@@ -698,7 +698,7 @@
             "mapKey": "Bonneville sur Touque"
         }, 
         {
-            "description": "Note: For 1200-01-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>13 miles from Bonneville-Sur-Touque, Normandie", 
+            "description": "Note: For 1200-01-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>13 miles from Bonneville-Sur-Touque, Normandie", 
             "title": "Lisieux, Normandie", 
             "start": "1200-01-07", 
             "LatLong": [
@@ -708,7 +708,7 @@
             "mapKey": "Lisieux"
         }, 
         {
-            "description": "Note: For 1200-01-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>28 miles from Lisieux, Normandie", 
+            "description": "Note: For 1200-01-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>28 miles from Lisieux, Normandie", 
             "title": "Lire, Normandie", 
             "start": "1200-01-08", 
             "LatLong": [
@@ -5737,7 +5737,7 @@
         }, 
         {
             "end": "1203-07-26", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('032');\" />pg. 032: 1203-06-30 to 1203-07-28<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('031');\" />pg. 031: 1203-06-15 to 1203-07-29<br>Note: For 1203-07-23 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1203-07-24 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>13 miles from Molineux, Normandie", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('032');\" />pg. 032: 1203-06-30 to 1203-07-28<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('031');\" />pg. 031: 1203-06-15 to 1203-07-29<br>Note: For 1203-07-23 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1203-07-24 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>13 miles from Molineux, Normandie", 
             "title": "Montfort, Normandie", 
             "start": "1203-07-18", 
             "LatLong": [
@@ -5747,7 +5747,7 @@
             "mapKey": "Montfort"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('032');\" />pg. 032: 1203-06-30 to 1203-07-28<br>Note: For 1203-07-23 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>21 miles from Montfort, Normandie", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('032');\" />pg. 032: 1203-06-30 to 1203-07-28<br>Note: For 1203-07-23 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>21 miles from Montfort, Normandie", 
             "title": "Rouen, Normandie", 
             "start": "1203-07-23", 
             "LatLong": [
@@ -6431,7 +6431,7 @@
             "mapKey": "Barfleur"
         }, 
         {
-            "description": "Note: For 1203-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>79 miles from Barfleur, Normandie", 
+            "description": "Note: For 1203-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>79 miles from Barfleur, Normandie", 
             "title": "Portsmouth, Hampshire", 
             "start": "1203-12-07", 
             "LatLong": [
@@ -6441,7 +6441,7 @@
             "mapKey": "Portsmouth"
         }, 
         {
-            "description": "Note: For 1203-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>3 miles from Portsmouth, Hampshire", 
+            "description": "Note: For 1203-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>3 miles from Portsmouth, Hampshire", 
             "title": "Southwick, Hampshire", 
             "start": "1203-12-07", 
             "LatLong": [
@@ -7870,7 +7870,7 @@
         }, 
         {
             "end": "1204-10-07", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('046');\" />pg. 046: 1204-09-12 to 1204-10-18<br>Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>35 miles from Devizes, Wiltshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('046');\" />pg. 046: 1204-09-12 to 1204-10-18<br>Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>35 miles from Devizes, Wiltshire", 
             "title": "Winchester, Hampshire", 
             "start": "1204-09-30", 
             "LatLong": [
@@ -7890,7 +7890,7 @@
             "mapKey": "Marlborough"
         }, 
         {
-            "description": "Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>42 miles from Marlborough, Wiltshire", 
+            "description": "Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>42 miles from Marlborough, Wiltshire", 
             "title": "Farnham, Surrey", 
             "start": "1204-10-07", 
             "LatLong": [
@@ -7901,7 +7901,7 @@
         }, 
         {
             "end": "1204-10-09", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('046');\" />pg. 046: 1204-09-12 to 1204-10-18<br>Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1204-10-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>10 miles from Farnham, Surrey", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('046');\" />pg. 046: 1204-09-12 to 1204-10-18<br>Note: For 1204-10-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1204-10-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>10 miles from Farnham, Surrey", 
             "title": "Guildford, Surrey", 
             "start": "1204-10-07", 
             "LatLong": [
@@ -8102,7 +8102,7 @@
         }, 
         {
             "end": "1204-11-07", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br>Note: For 1204-11-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>52 miles from London, Tower Of London", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br>Note: For 1204-11-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>52 miles from London, Tower Of London", 
             "title": "Canterbury, Kent", 
             "start": "1204-11-06", 
             "LatLong": [
@@ -8113,7 +8113,7 @@
         }, 
         {
             "end": "1204-11-08", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br>Note: For 1204-11-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1204-11-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>104 miles from Canterbury, Kent", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br>Note: For 1204-11-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1204-11-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>104 miles from Canterbury, Kent", 
             "title": "Winchester, Hampshire", 
             "start": "1204-11-07", 
             "LatLong": [
@@ -8124,7 +8124,7 @@
         }, 
         {
             "end": "1204-11-11", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: Hardy's placename refers to more than one location.\nPlace: Ashley, East Hampshire, Hampshire<br>Note: For 1204-11-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>25 miles from Winchester, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: Hardy's placename refers to more than one location.\nPlace: Ashley, East Hampshire, Hampshire<br>Note: For 1204-11-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>25 miles from Winchester, Hampshire", 
             "title": "Ashley, Hampshire", 
             "start": "1204-11-08", 
             "LatLong": [
@@ -8134,7 +8134,7 @@
             "mapKey": "Ashley (3)"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>48 miles from Ashley, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>48 miles from Ashley, Hampshire", 
             "title": "Farnham, Surrey", 
             "start": "1204-11-09", 
             "LatLong": [
@@ -8144,7 +8144,7 @@
             "mapKey": "Farnham"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>10 miles from Farnham, Surrey", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('048');\" />pg. 048: 1204-11-07 to 1204-12-25<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('047');\" />pg. 047: 1204-08-21 to 1204-11-11<br>Note: For 1204-11-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>10 miles from Farnham, Surrey", 
             "title": "Guildford, Surrey", 
             "start": "1204-11-09", 
             "LatLong": [
@@ -9342,7 +9342,7 @@
         }, 
         {
             "end": "1205-05-31", 
-            "description": "Note: For 1205-05-31 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>8 miles from Winchester, Hampshire", 
+            "description": "Note: For 1205-05-31 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>8 miles from Winchester, Hampshire", 
             "title": "Waltham, Hampshire", 
             "start": "1205-05-30", 
             "LatLong": [
@@ -9353,7 +9353,7 @@
         }, 
         {
             "end": "1205-06-09", 
-            "description": "Note: For 1205-05-31 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>8 miles from Waltham, Hampshire", 
+            "description": "Note: For 1205-05-31 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>8 miles from Waltham, Hampshire", 
             "title": "Porchester, Hampshire", 
             "start": "1205-05-31", 
             "LatLong": [
@@ -9917,7 +9917,7 @@
         }, 
         {
             "end": "1205-09-17", 
-            "description": "Note: For 1205-09-17 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>5 miles from Easton, Wiltshire", 
+            "description": "Note: For 1205-09-17 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>5 miles from Easton, Wiltshire", 
             "title": "Marlborough, Wiltshire", 
             "start": "1205-09-14", 
             "LatLong": [
@@ -10383,7 +10383,7 @@
         }, 
         {
             "end": "1205-12-07", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('057');\" />pg. 057: 1205-12-07 to 1206-01-04<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('056');\" />pg. 056: 1205-11-30 to 1205-12-13<br>Note: For 1205-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>1 miles from London, Middlesex", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('057');\" />pg. 057: 1205-12-07 to 1206-01-04<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('056');\" />pg. 056: 1205-11-30 to 1205-12-13<br>Note: For 1205-12-07 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>1 miles from London, Middlesex", 
             "title": "Westminster, Middlesex", 
             "start": "1205-12-06", 
             "LatLong": [
@@ -10393,7 +10393,7 @@
             "mapKey": "Westminster"
         }, 
         {
-            "description": "Note: For 1205-12-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>15 miles from Westminster, Middlesex", 
+            "description": "Note: For 1205-12-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>15 miles from Westminster, Middlesex", 
             "title": "Havering, Essex", 
             "start": "1205-12-08", 
             "LatLong": [
@@ -10403,7 +10403,7 @@
             "mapKey": "Havering"
         }, 
         {
-            "description": "Note: For 1205-12-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>14 miles from Havering, Essex", 
+            "description": "Note: For 1205-12-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>14 miles from Havering, Essex", 
             "title": "Sutton, Kent", 
             "start": "1205-12-08", 
             "LatLong": [
@@ -12792,7 +12792,7 @@
             "mapKey": "Winchester"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('074');\" />pg. 074: 1207-07-07 to 1207-07-22<br>Note: For 1207-07-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>14 miles from Winchester, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('074');\" />pg. 074: 1207-07-07 to 1207-07-22<br>Note: For 1207-07-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>14 miles from Winchester, Hampshire", 
             "title": "Faringdon, Hampshire", 
             "start": "1207-07-09", 
             "LatLong": [
@@ -12802,7 +12802,7 @@
             "mapKey": "Farringdon (2)"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('074');\" />pg. 074: 1207-07-07 to 1207-07-22<br>Note: For 1207-07-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>45 miles from Faringdon, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('074');\" />pg. 074: 1207-07-07 to 1207-07-22<br>Note: For 1207-07-09 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>45 miles from Faringdon, Hampshire", 
             "title": "Oxford, Oxfordshire", 
             "start": "1207-07-09", 
             "LatLong": [
@@ -13654,7 +13654,7 @@
             "mapKey": "Freemantle"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('077');\" />pg. 077: 1207-11-13 to 1207-12-19<br>Note: For 1207-12-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>16 miles from Freemantle Or Fremanton, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('077');\" />pg. 077: 1207-11-13 to 1207-12-19<br>Note: For 1207-12-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>16 miles from Freemantle Or Fremanton, Hampshire", 
             "title": "Faringdon, Hampshire", 
             "start": "1207-12-04", 
             "LatLong": [
@@ -15619,7 +15619,7 @@
             "mapKey": "Nottingham"
         }, 
         {
-            "description": "Note: For 1209-04-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>19 miles from Nottingham, Nottinghamshire", 
+            "description": "Note: For 1209-04-08 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>19 miles from Nottingham, Nottinghamshire", 
             "title": "Lexington Or Laxton, Nottinghamshire", 
             "start": "1209-04-08", 
             "LatLong": [
@@ -17072,7 +17072,7 @@
         }, 
         {
             "end": "1209-12-15", 
-            "description": "Note: For 1209-12-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>20 miles from Hinton, Somersetshire", 
+            "description": "Note: For 1209-12-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>20 miles from Hinton, Somersetshire", 
             "title": "Gillingham, Dorsetshire", 
             "start": "1209-12-14", 
             "LatLong": [
@@ -19244,7 +19244,7 @@
             "mapKey": "Lambeth"
         }, 
         {
-            "description": "Note: For 1211-04-16 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>0 miles from Lambeth, Surrey", 
+            "description": "Note: For 1211-04-16 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>0 miles from Lambeth, Surrey", 
             "title": "Lambeth, Surrey", 
             "start": "1211-04-16", 
             "LatLong": [
@@ -19397,7 +19397,7 @@
             "mapKey": "Kingshaugh"
         }, 
         {
-            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>123 miles from Kingshaugh, Nottinghamshire", 
+            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>123 miles from Kingshaugh, Nottinghamshire", 
             "title": "Clerkenwell, Middlesex", 
             "start": "1212-03-04", 
             "LatLong": [
@@ -19407,7 +19407,7 @@
             "mapKey": "Clerkenwell"
         }, 
         {
-            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>0 miles from Clerkenwell, Middlesex", 
+            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>0 miles from Clerkenwell, Middlesex", 
             "title": "London, Middlesex", 
             "start": "1212-03-04", 
             "LatLong": [
@@ -19417,7 +19417,7 @@
             "mapKey": "London"
         }, 
         {
-            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>0 miles from London, Middlesex", 
+            "description": "Note: For 1212-03-04 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>0 miles from London, Middlesex", 
             "title": "London, Saint Brides", 
             "start": "1212-03-04", 
             "LatLong": [
@@ -20897,7 +20897,7 @@
         }, 
         {
             "end": "1212-11-16", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('095');\" />pg. 095: 1212-04-19 to 1212-12-13<br>Note: For 1212-11-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>19 miles from Flaxley, Gloucestershire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('095');\" />pg. 095: 1212-04-19 to 1212-12-13<br>Note: For 1212-11-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>19 miles from Flaxley, Gloucestershire", 
             "title": "Hereford, Herefordshire", 
             "start": "1212-11-14", 
             "LatLong": [
@@ -20907,7 +20907,7 @@
             "mapKey": "Hereford"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('095');\" />pg. 095: 1212-04-19 to 1212-12-13<br>Note: For 1212-11-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>23 miles from Hereford, Herefordshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('095');\" />pg. 095: 1212-04-19 to 1212-12-13<br>Note: For 1212-11-14 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>23 miles from Hereford, Herefordshire", 
             "title": "Tewkesbury, Gloucestershire", 
             "start": "1212-11-14", 
             "LatLong": [
@@ -21163,7 +21163,7 @@
             "mapKey": "Beaulieu (1)"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('096');\" />pg. 096: 1212-12-13 to 1213-03-18<br>Note: For 1212-12-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>17 miles from Beaulieu, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('096');\" />pg. 096: 1212-12-13 to 1213-03-18<br>Note: For 1212-12-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>17 miles from Beaulieu, Hampshire", 
             "title": "Winchester, Hampshire", 
             "start": "1212-12-19", 
             "LatLong": [
@@ -23015,7 +23015,7 @@
         }, 
         {
             "end": "1213-10-19", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('105');\" />pg. 105: 1213-08-16 to 1213-11-13<br>Note: For 1213-10-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>50 miles from Westminster, Middlesex", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('105');\" />pg. 105: 1213-08-16 to 1213-11-13<br>Note: For 1213-10-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>50 miles from Westminster, Middlesex", 
             "title": "Freemantle Or Fremanton, Hampshire", 
             "start": "1213-10-17", 
             "LatLong": [
@@ -23025,7 +23025,7 @@
             "mapKey": "Freemantle"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('105');\" />pg. 105: 1213-08-16 to 1213-11-13<br>Note: For 1213-10-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>15 miles from Freemantle Or Fremanton, Hampshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('105');\" />pg. 105: 1213-08-16 to 1213-11-13<br>Note: For 1213-10-19 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>15 miles from Freemantle Or Fremanton, Hampshire", 
             "title": "Winchester, Hampshire", 
             "start": "1213-10-19", 
             "LatLong": [
@@ -23122,7 +23122,7 @@
         }, 
         {
             "end": "1213-11-12", 
-            "description": "Note: For 1213-11-12 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>11 miles from Brill, Buckinghamshire", 
+            "description": "Note: For 1213-11-12 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>11 miles from Brill, Buckinghamshire", 
             "title": "Finmere, Oxfordshire", 
             "start": "1213-11-11", 
             "LatLong": [
@@ -23196,7 +23196,7 @@
         }, 
         {
             "end": "1213-11-25", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('106');\" />pg. 106: 1213-07-22 to 1213-12-23<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('104');\" />pg. 104: 1213-07-21 to 1213-11-23<br>Note: For 1213-11-22 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1213-11-25 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>5 miles from Tewkesbury, Gloucestershire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('106');\" />pg. 106: 1213-07-22 to 1213-12-23<br><img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('104');\" />pg. 104: 1213-07-21 to 1213-11-23<br>Note: For 1213-11-22 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1213-11-25 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>5 miles from Tewkesbury, Gloucestershire", 
             "title": "Hanley Castle, Worcestershire", 
             "start": "1213-11-22", 
             "LatLong": [
@@ -23207,7 +23207,7 @@
         }, 
         {
             "end": "1213-11-27", 
-            "description": "Note: For 1213-11-25 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>20 miles from Hanley Castle, Worcestershire", 
+            "description": "Note: For 1213-11-25 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>20 miles from Hanley Castle, Worcestershire", 
             "title": "Hereford, Herefordshire", 
             "start": "1213-11-25", 
             "LatLong": [
@@ -24073,7 +24073,7 @@
         }, 
         {
             "end": "1214-05-23", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('115');\" />pg. 115: 1213-08-22 to 1214-05-25<br>Note: For 1214-05-18 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>3 miles from Mervaut, Poitou", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('115');\" />pg. 115: 1213-08-22 to 1214-05-25<br>Note: For 1214-05-18 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>3 miles from Mervaut, Poitou", 
             "title": "Vouvant, Poitou", 
             "start": "1214-05-18", 
             "LatLong": [
@@ -25090,7 +25090,7 @@
         }, 
         {
             "end": "1214-12-27", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('125');\" />pg. 125: 1214-12-06 to 1214-12-27<br>Note: For 1214-12-26 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br>Note: For 1214-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>22 miles from Hereford, Herefordshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('125');\" />pg. 125: 1214-12-06 to 1214-12-27<br>Note: For 1214-12-26 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br>Note: For 1214-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>22 miles from Hereford, Herefordshire", 
             "title": "Worcester, Worcestershire", 
             "start": "1214-12-25", 
             "LatLong": [
@@ -25101,7 +25101,7 @@
         }, 
         {
             "end": "1214-12-28", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('125');\" />pg. 125: 1214-12-06 to 1214-12-27<br>Note: For 1214-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>13 miles from Worcester, Worcestershire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('125');\" />pg. 125: 1214-12-06 to 1214-12-27<br>Note: For 1214-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>13 miles from Worcester, Worcestershire", 
             "title": "Tewkesbury, Gloucestershire", 
             "start": "1214-12-27", 
             "LatLong": [
@@ -25481,7 +25481,7 @@
         }, 
         {
             "end": "1215-03-21", 
-            "description": "Note: For 1215-03-20 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>40 miles from Saint Albans, Hertfordshire", 
+            "description": "Note: For 1215-03-20 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>40 miles from Saint Albans, Hertfordshire", 
             "title": "Northampton, Northamptonshire", 
             "start": "1215-03-20", 
             "LatLong": [
@@ -26162,7 +26162,7 @@
             "mapKey": "Corfe"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>78 miles from Corfe, Dorsetshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>78 miles from Corfe, Dorsetshire", 
             "title": "Abingdon, Berkshire", 
             "start": "1215-07-15", 
             "LatLong": [
@@ -26172,7 +26172,7 @@
             "mapKey": "Abingdon"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>45 miles from Abingdon, Berkshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>45 miles from Abingdon, Berkshire", 
             "title": "Clarendon, Wiltshire", 
             "start": "1215-07-15", 
             "LatLong": [
@@ -26182,7 +26182,7 @@
             "mapKey": "Clarendon"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>29 miles from Clarendon, Wiltshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('149');\" />pg. 149: 1215-07-08 to 1215-07-20<br>Note: For 1215-07-15 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>29 miles from Clarendon, Wiltshire", 
             "title": "Newbury, Berkshire", 
             "start": "1215-07-15", 
             "LatLong": [
@@ -26711,7 +26711,7 @@
         }, 
         {
             "end": "1215-12-28", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>9 miles from Nottingham, Nottinghamshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-27 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>9 miles from Nottingham, Nottinghamshire", 
             "title": "Langar, Nottinghamshire", 
             "start": "1215-12-26", 
             "LatLong": [
@@ -26722,7 +26722,7 @@
         }, 
         {
             "end": "1215-12-30", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>12 miles from Langar, Nottinghamshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>12 miles from Langar, Nottinghamshire", 
             "title": "Newark-Upon-Trent, Nottinghamshire", 
             "start": "1215-12-28", 
             "LatLong": [
@@ -26733,7 +26733,7 @@
         }, 
         {
             "end": "1216-01-01", 
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>22 miles from Newark-Upon-Trent, Nottinghamshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>22 miles from Newark-Upon-Trent, Nottinghamshire", 
             "title": "Hodsock, Nottinghamshire", 
             "start": "1215-12-30", 
             "LatLong": [
@@ -26743,7 +26743,7 @@
             "mapKey": "Hodsock"
         }, 
         {
-            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml\">summary table</a><br><br>13 miles from Hodsock, Nottinghamshire", 
+            "description": "<img src=\"Images/document.png\" class=\"doc-link\" onclick=\"SimileAjax.WindowManager.cancelPopups(); loadPage('162');\" />pg. 162: 1215-12-25 to 1216-01-05<br>Note: For 1215-12-30 there exists a discrepancy between editions of Hardy's Itinerary. See JG's <a class=\"text-link external\" target=\"_blank\" href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml\">summary table</a><br><br>13 miles from Hodsock, Nottinghamshire", 
             "title": "Lexington Or Laxton, Nottinghamshire", 
             "start": "1215-12-30", 
             "LatLong": [

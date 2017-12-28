@@ -19,7 +19,7 @@ places_json = {
             "When John appears to be heading south west on a near constant bearing from Rouen to Angers but stays here one night. The next three days have no record before John appears at Le Mans (North East) and then turns south to Chinon. The only logical explanation is that there was difficulty crossing the River Sarthe  which is just to the south of Anvers le Homont and John therefore moved upstream until he could cross at Le Mans before turning south again.", 
             "John may have stayed at the Priory of Auvers-le-Hamon"
         ], 
-        "notes&queries": [], 
+        "notes&queries": [],
         "Modern Name": "Auvers-le-Hamon"
     }, 
     "Burton-Upon-Trent": {
@@ -12229,7 +12229,7 @@ places_json = {
             "1213-04-08"
         ], 
         "Hardy Name": "Inter Porchester Et Farnham", 
-        "LatLong": [0,0], 
+        "LatLong": [], 
         "References": [], 
         "Comments": [], 
         "notes&queries": [
@@ -15360,7 +15360,7 @@ places_json = {
             "1200-07-16"
         ], 
         "Hardy Name": "Bois, Saintonge", 
-        "LatLong": [0,0], 
+        "LatLong": [], 
         "References": [], 
         "Comments": [
             "?Bois de Bourdeaux -  was this a hunting trip in the woods? OR Saint-Hilarie-du Bois, 40.2 miles to the north near Jonzac.", 

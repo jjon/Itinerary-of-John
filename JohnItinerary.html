@@ -1,22 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<!DOCTYPE html>
+<html>
 <head>
 
     <!-- jsconfig will load https://maps.googleapis.com/maps/api/js -->
     <script type="text/javascript" src="jsconfig.js"></script>
 	
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="js/jquery-ui-1.12.1.custom/jquery-ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" type="text/css" />
 	<script type="text/javascript">
 		Timeline_ajax_url="js/timeline/src/ajax/api/simile-ajax-api.js";
 		Timeline_urlPrefix="js/timeline/src/webapp/api/";       
 		Timeline_parameters="bundle=false";
 	</script>
 	
-	<script type"text/javascript">debugvar = "foobar";</script>
+	<script type="text/javascript">debugvar = "foobar";</script>
 	
 	<script src="js/timeline/src/webapp/api/timeline-api.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="JohnItinerary.css" type="text/css">
+	<link rel="stylesheet" href="JohnItinerary.css" type="text/css" />
 
 	<script type="text/javascript" src="js/shadowbox-2.0-code/src/adapter/shadowbox-base.js"></script>
 	<script type="text/javascript" src="js/shadowbox-2.0-code/src/shadowbox.js"></script>
@@ -24,9 +25,6 @@
 	<script src="js/johns-reign.js" type="text/javascript"></script>
 
 	<script src="data/tst_gazetteer_Wvisits.js" type="text/javascript"></script>
-
-    <!-- oldgaz data -->
-    <script src="data/gazetteer.js" type="text/javascript"></script>
 
 	<script src="js/itin-code.js" type="text/javascript"></script>
 
@@ -36,7 +34,7 @@
 		Shadowbox.loadLanguage('en', 'js/shadowbox-2.0-code/src/lang');
 		Shadowbox.loadPlayer(['html'], 'js/shadowbox-2.0-code/src/player');
 	</script>
-	<meta name="Description" CONTENT="Author: J.J. Crump, A dynamic timeline and map of the itinerary of king John of England, with events and places in his timeline linked to where they occur in the Patent Rolls, the Rotuli Litterarum Patentium. A chronological and geographical user interface to a fundamental historical resource for the history of Medieval England." />
+	<meta name="Description" content="Author: J.J. Crump, A dynamic timeline and map of the itinerary of king John of England, with events and places in his timeline linked to where they occur in the Patent Rolls, the Rotuli Litterarum Patentium. A chronological and geographical user interface to a fundamental historical resource for the history of Medieval England." />
     <title>The Itinerary of King John Project</title>
 
 </head>
@@ -55,8 +53,8 @@
 	
 		<div id="navlist">
             <div id="scrollbuttons">
-                <button style="text-align: left" class="arbut" id='larrow'><<< past</button>
-                <button style="text-align: right" class="arbut" id='rarrow'>future >>></button>
+                <button style="text-align: left" class="arbut" id='larrow'>&lt;&lt;&lt; past</button>
+                <button style="text-align: right" class="arbut" id='rarrow'>future &gt;&gt;&gt;</button>
             </div>
 			<ul> 
 				<li id="tab1" class="tab_showing" onclick="javascript:show_next('tab1')">About this site</li>
@@ -82,7 +80,23 @@
 					<dd style="max-height: 250px; overflow-y: scroll">
 						<img src="Images/construct.gif" alt="under construction" style="float: left; margin-right: 2em" />
 						<ul>
-							<li>Oct. 2017 &mdash; another remodel to present a goldmine of useful data generously provided by Janet Gillespie. In the course of her dissertation research, Gillespie has patiently and precisely investigated ALL of the sites mentioned in Hardy's Itinerary of John, assembled geographical coordinates and source material on all except one location, and commented on the importance of each in the context of John's itinerations.<p>As mentioned below, the first generation of map coordinates for this site were the result of a very crude geocoding automation. Gillespie's data are far more complete and accurate and henceforth they will constitute the 'canonical' gazetteer for this site.</p><p>I'm very much indebted to Janet for her generous contribution and ongoing collaboration in this project.</p></li>
+							<li>Oct. 2017 &mdash; another remodel to present a goldmine of useful data generously provided by Janet Gillespie. In the course of her dissertation research, Gillespie has patiently and precisely investigated ALL of the sites mentioned in Hardy's Itinerary of John, assembled geographical coordinates and source material on all except one location, and commented on the importance of each in the context of John's itinerations.<p>As mentioned below, the first generation of map coordinates for this site were the result of a very crude geocoding automation. Gillespie's data are far more complete and accurate and henceforth they will constitute the 'canonical' gazetteer for this site.</p><p>I'm very much indebted to Janet for her generous contribution and ongoing collaboration in this project.</p>
+							
+							<p>In addition to corrected and new data, a summary of added functionality:</p>
+							
+							<ul>
+                                <li>Gazetteer data available from both map markers and timeline bubbles</li>
+                                <li>Great circle distance from previous location provided in timeline bubbles</li>
+                                <li>Link to error summary table provided in timeline bubbles for those dates that are on the discrepancy list.</li>
+                                <li>Indication in timeline bubble when the Hardy placename cited represents more than one location.</li>
+                                <li>In the "Page Images" tab, there's a new selection list to take the user to any page of the Itinerary Index/Table scans</li>
+                                <li>In the Gazetteer data dialog the number of visits for the location is cited, and a selection list provided to move the timeline to any of the other visits for that placename</li>
+                                <li>And, it's (barely) mobile friendly. That is, I've provided a way to scroll the timeline on 'coarse' pointer devices, like a cell phone. I've, as yet, made no other accommodations for mobile devices.</li>
+                            </ul>
+							
+							
+							
+							</li>
 							<li>Feb. 2009 &mdash; remodel of the site to make better use of screen real estate making use of the jQuery and Shadowbox javascript libraries</li>
 						</ul>
 					</dd>
@@ -115,7 +129,7 @@
 						
 						<p><span style="font-size: 120%; color: #FF9500">October, 2017:</span> For the current re-design of this site, in conversation with Dr. Gillespie, it became clear that we were both working from slightly different resources. The folio edition of the <cite>Rotuli litterarum patentium in Turri londinensi asservati</cite> was published in 1835 by Eyre and Spottiswoode. Hardy's Itinerary was included with his introduction to this volume ( <a target="_blank" class="text-link external" href="http://www.worldcat.org/oclc/38630269">folio ed</a> ). However, also in 1835 Hardy's introduction and itinerary appeared in a separate quarto volume <cite>A Description of the Patent Rolls in the Tower of London; to which is added an Itinerary of King John with preferatory observations. </cite>( <a target="_blank" class="text-link external" href="http://www.worldcat.org/oclc/895817071">quarto ed</a> )</p>
 						
-						<p>In the main, this site treats the folio edition of the <cite>Rot. Lit. Pat.</cite> as canonical, and the page scans included under the "Page Images" tab above come from that edition. However, I had presumed that the quarto edition was identical. It is not. The number of discrepancies that exist between the two publications is remarkably small, but potentially significant. Dr. Gillespie has carefully catalogued these discrepancies in a <a target="_blank" class="text-link external" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQcxpk9T6H8FmgR617K-Zu9QYF-V5GVkFcPIQlLBM5gR25SHibCXx8CdGg56k84DqZjJOxjj4_Q-agO/pubhtml">summary table</a>. Moreover, where possible, an indication that a discrepancy exists will be provided in the relevant timeline bubble and in the corresponding geographical data.</p>
+						<p>In the main, this site treats the folio edition of the <cite>Rot. Lit. Pat.</cite> as canonical, and the page scans included under the "Page Images" tab above come from that edition. However, I had presumed that the quarto edition was identical. It is not. The number of discrepancies that exist between the two publications is remarkably small, but potentially significant. Dr. Gillespie has carefully catalogued these discrepancies in a <a target="_blank" class="text-link external" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_KXvhyu7r0C0h0Ud4v_uM1JqsnsXzL1A0m4MwWMJcO7fndL54sD3bxI6mpjMIpiCTxmGR72gGMbI9/pubhtml">summary table</a>. Moreover, where possible, an indication that a discrepancy exists will be provided in the relevant timeline bubble and in the corresponding geographical data.</p>
 						
 						<p>To complicate the bibliographical picture still further, Hardy, in 1827, presented a preliminary version of the same itinerary which was then published in 1835.  In this paper there are additional indications of note. "In the following Table I have endeavoured to give the modern designation where I was satisfied of the identity of the place. A royal Manor or demesne is marked by an asterisk *; a Castle in the King's hands by a dagger &#8224;; a Religious house by &#8225;." No attempt has been made here to collate this earlier table with the 1835 version presented here. If you encounter interesting discrepancies or additional data in the earlier version, contact me and we can add a note in the relevant records. The 1827 version appears in: the Society of Antiquaries of London. <u>Archaeologia, Or, Miscellaneous Tracts Relating to Antiquity</u>. London: The Society, 1770, vol.XXII, pg.124 (1829). This work, along with the two 1835 publications are made available by the HathiTrust and have been gathered in a collection here: <a class="text-link external" target="_blank" href="https://babel.hathitrust.org/cgi/mb?a=listis&c=799372342">Itinerary of John</a>.</p>
 					</dd>
@@ -159,16 +173,18 @@
 						href="http://purl.org/neolography/JohnItinerary"
 						property="cc:attributionName"
 						rel="cc:attributionURL">J. J. Crump</span> is licensed under a <a class="text-link external" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/us/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License</a>.</p>
-						<div style="text-align: center">
-						<img class='logos' src="Images/uwlibs1.png" />
-						<img class='logos' src="Images/UStA283.png" />
-						<p>While we acknowledge and are grateful for the help of these institutions, they do not sponsor or fund this project, and bear no responsibility for it.</p>
-						</div>
+                        <!-- 
+                        <div style="text-align: center">
+                            <img class='logos' src="Images/uwlibs1.png" />
+                            <img class='logos' src="Images/UStA283.png" />
+                            <p>While we acknowledge and are grateful for the help of these institutions, they do not sponsor or fund this project, and bear no responsibility for it.</p>
+                        </div>
+                        -->
 					</dd>
 				</dl>
 				<div id="sharebutton" style="text-align: center">
 				<!-- AddThis Button BEGIN -->
-					<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a9028967ab24cfd"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+					<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=xa-4a9028967ab24cfd"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0" /></a>
 					<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a9028967ab24cfd">
 					</script>
 				<!-- AddThis Button END -->
@@ -176,7 +192,7 @@
 				
 			</div> <!-- End Tab 1 contents -->
 				
-			<div id=tab2_content style='display:none'>
+			<div id="tab2_content" style='display:none'>
 				<dl>
 					<dt>Band One</dt>
 					<dd>
@@ -205,10 +221,11 @@
 					</dd>
 				</dl>
 	
-			</div> <!-- End Tab 3 contents -->
+			</div> <!-- End Tab 2 contents -->
 				
-			<div id=tab3_content style='display:none; height: 350px'>	
+			<div id="tab3_content" style='display:none'>	
 				<div class="control-box">
+				<h3>Go to a Year</h3>
 				<p>Select a year from John's reign to center the timeline on that year.</p><br />
 				<select id="johnyears" onChange="pickDate();">
 					<option value="">Select a year</option>
@@ -234,14 +251,23 @@
 				</div>
 	
 				<div id="controls" class="control-box">
+				<h3>Highlite an Event</h3>
 				<p>Type into the boxes to filter or highlight events that contain the text in either the event title, or the event info bubble:</p>
 				</div>
-			
-			</div> <!-- End Tab 2 contents -->
+				
+				<div class="control-box">
+				<div class="ui-widget">
+				    <h3>Search the Gazetteer</h3>
+				    <p>Start typing in the box below to search the places in the gazetteer. Select to see the geographical data.</p>
+				    <input style="width: 16em" id="searchplaces" />
+				    <div id="Places"></div>
+				</div>
+			    </div>
+			</div> <!-- End Tab 3 contents -->
 				
 			<div id="page_images" style="display: none; ">
 				<div style="text-align: center;">
-					<img id="scan" src="pageImages/001.jpg" alt="image of a page in the Rot. Lit. Pat."/>
+					<img id="scan" src="pageImages/001.jpg" alt="image of a page in the Rot. Lit. Pat." />
 				</div>
 			</div>
 		</div> <!-- End Content Divs -->
@@ -255,7 +281,7 @@
 
 		</div>
 		<div style="text-align: center; color: #FF9500; font-size: 200%; font-weight: bold; padding: 20px">The Itinerary of King John &amp; the <cite>Rotuli Litterarum Patentium</cite></div>
-		<div style="text-align: center"><img src="Images/JohnsSeal.png" alt="John's Great Seal, reverse" name="John's Great Seal, reverse" /></div>
+		<div style="text-align: center"><img src="Images/JohnsSeal.png" alt="John's Great Seal, reverse" /></div>
 	</div>
 
 	<div id="footer">
