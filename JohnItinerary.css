@@ -27,7 +27,7 @@ body {
 }
 /* End Column Layout */
 
-
+.logos {padding: 0px 24px}
 #map-box {
 	border-style: solid;
 	border-color:  #887755;
@@ -64,10 +64,10 @@ dt {
 
 .control-box {
 	float: left;
-	width: 160px;
+	width: 200px;
 	padding: 10px;
 	font-family: 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
-	font-size: 9pt;
+	font-size: 11pt;
 }
 
 #about_list dt {
@@ -83,30 +83,70 @@ dt {
 	color: #fff !important;
 }
 
+
+.arbut {
+    display: none;
+}
+@media (pointer: coarse) {
+    #scrollbuttons {text-align: center;}
+    .arbut {
+        display: inline;
+        font-size: 120%;
+        font-weight: 700;
+        width: 45%;
+        height: 5em;
+        margin-bottom: 3em;
+        border: 5px #99baaa;
+        border-style: outset;
+    }
+    .arbut.active {background-color: #44b780;}
+}
+
 dd {
 	margin-left: 1.5em;
 	margin-top: .5em;
 	margin-bottom: .5em;
 }
 
+.geobutton {
+    font-size: 80%;
+    background-color: #9ba;
+    cursor: pointer;
+    border: 1px #8a9 groove;
+    border-radius: 6px;
+    float: right;
+    height: 16px;
+    text-align: center;
+    margin-right: 10px;
+}
+.geobutton:hover {border: none}
+
 .iwcontent {
-	width: 260px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size : 9px !important;
-	line-height: 9px;
-	max-height: 100px;
+    height: 100%;
+    background-color: #ffffe0;
+	font-family: Garamond, Baskerville, "Book Antiqua", serif;
+	font-size: 12pt;
 	overflow: auto;
 }
 
 .iwcontent table {
-	margin-left: auto;
-	margin-right: auto;
+    margin: 16px;
 }
 
 .rubric {
+    padding: 3px 9px;
+    width: 20%;
 	text-align: right;
-	border-bottom: 1px solid tan;
-	border-right: 3px solid tan;	
+	border-top: 2px solid tan;
+	border-right: 9px solid tan;	
+}
+
+.tvalue {
+    padding: 0px 9px;
+}
+
+.tvalue ul{
+    list-style: outside;
 }
 
 ul {
@@ -128,14 +168,43 @@ a.year:hover{
 	color: #f00
 }
 
-a.text_link{
+a.text-link{
 	color: #800;
 	text-decoration: none;
-	font-weight: bold
+	font-weight: bold;
 }
 
-a.text_link:hover{
-	color: #f00
+a.text-link:hover{
+	color: #f00;
+	text-decoration: underline;
+}
+
+a.text-link.external {
+	background: url("Images/ex-link-red.png") no-repeat right;
+	padding-right: .8em;
+}
+
+.email-span {
+    font-size: smaller;
+    color: #555;
+}
+
+ul.ui-autocomplete {
+    max-height: 185px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid #482a00;
+	background: #8e2e01;
+	font-weight: normal;
+	color: #ffffff;
 }
 
 
@@ -178,9 +247,10 @@ a.text_link:hover{
 	font-weight:bold;
 }
 
-/*
-.tab:hover {background-color: #ff9500}
-*/
+#tab3_content {
+    height: -webkit-fill-available;
+    height: 100vh;
+}
 
 #content-divs {
 	background: #FFF9D6;

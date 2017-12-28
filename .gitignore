@@ -4,6 +4,7 @@ js/timeline
 js/timeline_2.3.0
 js/timeline-bundleonly
 js/jquery-1.3.2.min.js
+js/jquery-ui-1.12.1.custom
 jsconfig.js
 layout2-staticMIT-.html
 test_timezones.html
