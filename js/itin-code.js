@@ -301,8 +301,7 @@ function onLoad() {
 
 	tl = Timeline.create(document.getElementById("JohnItinerary"), bandInfos);
 		
-	//tl.loadJSON("data/Itinerary.js", function(json, url) { eventSource.loadJSON(json, url); });
-	tl.loadJSON("data/tst_events_objIV.js", function(json, url) {
+	tl.loadJSON("data/Itinerary.js", function(json, url) {
 	    eventVar = json; //jsust so I can see it in the console.
 	    eventSource.loadJSON(json, url);  
 	});
