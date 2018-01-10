@@ -18,7 +18,7 @@
  */
 places_json = {};
 hardyDict = {};
-places_json_keys = [];
+places_json_keys = []; //to use for the autocomplete which is in the onLoad function
 
 jQuery.getJSON("./data/Gazetteer.json", function(data){
     places_json = data;
