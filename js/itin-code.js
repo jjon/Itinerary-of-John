@@ -1,36 +1,48 @@
 
 
 
-/*==================================================
- * Initialize Timeline and Map
- *==================================================
+/*==========================================================
+ * Initialize Timeline and Map and data Gazetteer objects.
+ *==========================================================
  */
+//globals tl, map, eventVar, places_json, hardyDict, places_json_keys
+//create a namespace for the data objects?
 
-var tl = null;
-var map = null;
-var eventVar = null; // DEBUG: just so I can see it in the console.
 
 /*==========================================================================
- *  Lets have access to the geodata as an object keyed by Hardy Names, with
- *  values being a list of objects having that 'Hardy Name'.
+ *  I don't know if this is any better than using a script tag to load a js
+ *  file containing the places_json object definition, but it seems to be more
+ *  idiomatic. And in the same breath we can generate the hardyDict (in case we
+ *  should need it
  *==========================================================================
  */
-var hardyDict = function(){
-    plist = Object.values(places_json);
-    pobj = Object();
+places_json = {};
+hardyDict = {};
+places_json_keys = [];
+
+jQuery.getJSON("./data/Gazetteer.json", function(data){
+    places_json = data;
+    places_json_keys = Object.keys(places_json);
+    var plist = Object.values(data)
     for (var x=0; x<plist.length; x++){
         var d = plist[x]
-        if (!pobj[d['Hardy Name']]){
-            pobj[d['Hardy Name']] = [d];
+        if (!hardyDict[d['Hardy Name']]){
+            hardyDict[d['Hardy Name']] = [d];
         } else {
-            pobj[d['Hardy Name']].push(d);
+            hardyDict[d['Hardy Name']].push(d);
         };
     };
-    return pobj;
-}();
+
+    //an array of hardyDict keys that have multiple members
+    hardyDict.multiples = Object.keys(hardyDict).filter(function(x){if (hardyDict[x].length > 1){return x;}})
+});
+
+
 
 
 function onLoad() {
+    // This onLoad function is now called in the google maps callback in the jsconfig.js script
+    
 	// Initialize google map
 	map = new google.maps.Map(document.getElementById('map'), {
         zoom: 6,
@@ -44,8 +56,9 @@ function onLoad() {
     
     var lat, lng, nts, notes, icon, marker, iwcontent, x;
     var place, county, hardy, modernName, comments, references, notesQueries;
-/*gaz entry example: 
-"Placename": "Melksham", 
+
+//gaz entry example: 
+/*"Placename": "Melksham", 
         "County/Dept": "Wiltshire", 
         "Comments": [
             "Saxon origins at fording point over the River Avon", 
@@ -320,6 +333,19 @@ function onLoad() {
 	    updateMap();
 	});			
 	
+
+
+// Duh! had to put this in the onLoad callback where it works just fine.
+    jQuery("#searchplaces").autocomplete({
+        source: places_json_keys,
+        appendTo: $("#Places"),
+        select: function( event, ui ) {showGeodataSB(ui.item.value);}
+    });
+
+
+
+
+
 }// end of onLoad
 	
 
@@ -1044,16 +1070,18 @@ function loadPage(pgno){
 	});
 };
 
-/*==================================================
- *  UI tweaks with jQuery
- *==================================================
+
+
+/*=========================================================================
+ *  jQuery document.ready. NB: anything that relies on Itin. or Map DATA
+ *  can't go here because it's all generated AFTER document.ready.
+ *  (put it in onLoad)
+ *=========================================================================
  */
 
-// Initialize jQuery
-$(document).ready(function($){
-
+$(document).ready(function($){ 
 // initialize shadowbox and set options here.
- Shadowbox.init();
+    Shadowbox.init();
 
 // Utility Wait function
     $.fn.wait = function(time, type) {
@@ -1080,16 +1108,6 @@ $(document).ready(function($){
 		}).prev().css({"background": "#221", "color": "#FF9500"});
 	});
 	
-	//TODO: use Hardy Name instead: jQuery.map(places_json, function(x){return x['Hardy Name'];})
-    jQuery("#searchplaces").autocomplete({
-        source: Object.keys(places_json),
-        appendTo: $("#Places"),
-        select: function( event, ui ) {showGeodataSB(ui.item.value);}
-        //focus: function(event, ui){console.log(event.toElement());}
-    });
-
-
-
 
 // Set tab 4 to call loadPage
 	$('#tab4').click(loadPage);
@@ -1097,13 +1115,13 @@ $(document).ready(function($){
 // How to use the SimileAjax code to create an info bubble on any element w/class .ttip:
 // This one just reports the text in the span, but it could be anything.
 // 4th parameter, contentWidth is optional: defaults to 300px.
-$('.ttip').click(function(ev){
-	mouseX = ev.pageX;
-	mouseY = ev.pageY;
-	bubl = document.createElement('div');
-	bubl.innerHTML = "<span>"+$(this).text()+"</span>";
-	SimileAjax.Graphics.createBubbleForContentAndPoint(bubl, mouseX, mouseY, 100, 'bottom');
-});
+    $('.ttip').click(function(ev){
+        mouseX = ev.pageX;
+        mouseY = ev.pageY;
+        bubl = document.createElement('div');
+        bubl.innerHTML = "<span>"+$(this).text()+"</span>";
+        SimileAjax.Graphics.createBubbleForContentAndPoint(bubl, mouseX, mouseY, 100, 'bottom');
+    });
 
 /*==============================  SCROLL MOBILE  ==============================
  *  Well, whaddya know: this works. A bit crude, but now we can scroll timeline
@@ -1112,52 +1130,39 @@ $('.ttip').click(function(ev){
  *=============================================================================
  */
 
-$("#rarrow").on('touchstart', function(touchevt){
-    touchevt.preventDefault();
-    $(this).addClass("active");
-    intervalIDright = setInterval(function(){
-        var b1 = tl.getBand(1)
-        var b1input = $(".timeline-band-input > input").get(1)
-        var e = jQuery.Event( "keydown", { keyCode: 39 } );
-        b1._onKeyDown(b1input, e, b1input)    
-    }, 30)
-});
+    $("#rarrow").on('touchstart', function(touchevt){
+        touchevt.preventDefault();
+        $(this).addClass("active");
+        intervalIDright = setInterval(function(){
+            var b1 = tl.getBand(1)
+            var b1input = $(".timeline-band-input > input").get(1)
+            var e = jQuery.Event( "keydown", { keyCode: 39 } );
+            b1._onKeyDown(b1input, e, b1input)    
+        }, 30)
+    });
     
-$("#rarrow").on('touchend', function(touchendevt) {
-    $(this).removeClass("active");
-    touchendevt.preventDefault();
-    clearInterval(intervalIDright);
-});
+    $("#rarrow").on('touchend', function(touchendevt) {
+        $(this).removeClass("active");
+        touchendevt.preventDefault();
+        clearInterval(intervalIDright);
+    });
 
-$("#larrow").on('touchstart', function(touchevt){
-    touchevt.preventDefault();
-    $(this).addClass("active");
-    intervalIDleft = setInterval(function(){
-        var b1 = tl.getBand(1)
-        var b1input = $(".timeline-band-input > input").get(1)
-        var e = jQuery.Event( "keydown", { keyCode: 37 } );
-        b1._onKeyDown(b1input, e, b1input)    
-    }, 30)
-});
+    $("#larrow").on('touchstart', function(touchevt){
+        touchevt.preventDefault();
+        $(this).addClass("active");
+        intervalIDleft = setInterval(function(){
+            var b1 = tl.getBand(1)
+            var b1input = $(".timeline-band-input > input").get(1)
+            var e = jQuery.Event( "keydown", { keyCode: 37 } );
+            b1._onKeyDown(b1input, e, b1input)    
+        }, 30)
+    });
     
-$("#larrow").on('touchend', function(touchendevt) {
-    $(this).removeClass("active");
-    touchendevt.preventDefault();
-    clearInterval(intervalIDleft);
-});
-
-/* 1st try at mobile scroll. This wasn't satisfactory
-$("#larrow").click(function(evt){
-    var dt = tl.getBand(0).getMinVisibleDate();
-    tl.getBand(0).scrollToCenter(dt);
-});	
-
-$("#rarrow").click(function(evt){
-    var dt = tl.getBand(0).getMaxVisibleDate();
-    tl.getBand(0).scrollToCenter(dt);
-});	
-	
- */
-
+    $("#larrow").on('touchend', function(touchendevt) {
+        $(this).removeClass("active");
+        touchendevt.preventDefault();
+        clearInterval(intervalIDleft);
+    });
 
 }); // end $(document).ready()
+
